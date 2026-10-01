@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Built index cache (rebuilt automatically by app.py)
+.ragbox_index/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
