@@ -1,0 +1,8 @@
+# RAG-in-a-Box dependencies — intentionally light, no API keys needed.
+# Python 3.10+
+scikit-learn>=1.3
+numpy>=1.24
+flask>=3.0
+
+# Optional: swap in dense neural embeddings (see ragbox/embeddings.py)
+# sentence-transformers>=2.2
