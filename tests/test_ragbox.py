@@ -134,5 +134,80 @@ class TestPipeline(unittest.TestCase):
         self.assertIn("citations", d)
 
 
+_FAKE_10K_HTML = """<html><head><title>10-K</title>
+<script>var xbrl = 1;</script>
+<style>.hidden{display:none}</style></head>
+<body>
+<div style="display:none">us-gaap:Revenue 12345 hidden xbrl junk</div>
+<p>APPLE INC.</p>
+<p>ITEM 1. Business</p>
+<p>Apple designs a wide variety of consumer electronic devices.</p>
+<p>42</p>
+<p>ITEM 1A. Risk Factors</p>
+<p>Our business is subject to intense competition.</p>
+</body></html>"""
+
+
+class TestEdgarCleaning(unittest.TestCase):
+    def test_html_to_text_drops_markup_and_xbrl(self):
+        from ragbox.edgar import html_to_text
+        text = html_to_text(_FAKE_10K_HTML)
+        self.assertIn("Apple designs a wide variety", text)
+        self.assertNotIn("xbrl", text.lower())
+        self.assertNotIn("var xbrl", text)
+        self.assertNotIn("display:none", text)
+
+    def test_html_to_text_drops_page_numbers(self):
+        from ragbox.edgar import html_to_text
+        text = html_to_text("<html><body><p>42</p><p>Real content here.</p></body></html>")
+        self.assertNotIn("\n42\n", f"\n{text}\n")
+        self.assertIn("Real content here.", text)
+
+    def test_split_10k_items(self):
+        from ragbox.chunking import split_10k_items
+        sections = split_10k_items(
+            "Cover page text here.\nITEM 1. Business\nBody one.\n"
+            "ITEM 1A. Risk Factors\nBody two.\n"
+        )
+        titles = [t for t, _ in sections]
+        self.assertIn("Cover", titles)
+        self.assertTrue(any(t.startswith("ITEM 1.") for t in titles))
+        self.assertTrue(any(t.startswith("ITEM 1A") for t in titles))
+        body = dict(sections)["ITEM 1. Business"]
+        self.assertIn("Body one.", body)
+
+    def test_split_10k_items_no_headers(self):
+        from ragbox.chunking import split_10k_items
+        sections = split_10k_items("Just some plain text.")
+        self.assertEqual(len(sections), 1)
+        self.assertEqual(sections[0][0], "Full filing")
+
+    def test_split_10k_items_dedupes_toc_phantoms(self):
+        from ragbox.chunking import split_10k_items
+        text = ("ITEM 1. Business\nITEM 1A. Risk Factors\n"  # table of contents
+                "ITEM 1. Business\n" + "Real business body. " * 50 + "\n"
+                "ITEM 1A. Risk Factors\n" + "Real risks body. " * 50 + "\n")
+        sections = split_10k_items(text)
+        titles = [t for t, _ in sections]
+        self.assertEqual(len(sections), 2)
+        self.assertTrue(any(t.startswith("ITEM 1.") for t in titles))
+        body = dict(sections)[titles[0]]
+        self.assertIn("Real business body.", body)
+
+    def test_load_text_sections(self):
+        import tempfile
+        from ragbox.chunking import load_text
+        with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False) as fh:
+            fh.write("ITEM 7. Management Discussion\nMD&A body text here.\n")
+            tmp = fh.name
+        try:
+            docs = load_text(tmp, doc_id="TEST_10K")
+            self.assertEqual(len(docs), 1)
+            self.assertTrue(docs[0]["section"].startswith("ITEM 7"))
+            self.assertIn("MD&A body", docs[0]["text"])
+        finally:
+            Path(tmp).unlink()
+
+
 if __name__ == "__main__":
     unittest.main()

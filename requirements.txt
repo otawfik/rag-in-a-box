@@ -3,6 +3,7 @@
 scikit-learn>=1.3
 numpy>=1.24
 flask>=3.0
+beautifulsoup4>=4.12  # SEC EDGAR 10-K HTML cleaning
 
 # Optional: swap in dense neural embeddings (see ragbox/embeddings.py)
 # sentence-transformers>=2.2

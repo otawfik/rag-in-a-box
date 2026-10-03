@@ -224,6 +224,78 @@ def load_markdown(path: str | Path, doc_id: str | None = None) -> list[dict]:
     return docs
 
 
+#: 10-K section headers, e.g. "ITEM 1. Business", "ITEM 7A. Quantitative ...".
+#: Used by load_text to split a filing into its natural sections so chunks
+#: (and later citations) carry meaningful section labels like "ITEM 7".
+_ITEM_RE = re.compile(
+    r"^\s*ITEM\s+(\d{1,2}[A-Z]?)\.?\s*(.*)$",
+    re.IGNORECASE | re.MULTILINE,
+)
+
+
+def split_10k_items(text: str) -> list[tuple[str, str]]:
+    """Split 10-K text into (section_title, body) pairs on ITEM headers.
+
+    Returns [("Full filing", text)] when no ITEM headers are found.
+    """
+    matches = list(_ITEM_RE.finditer(text))
+    if not matches:
+        return [("Full filing", text.strip())]
+    sections: list[tuple[str, str]] = []
+    # preamble before the first ITEM header (cover page etc.)
+    pre = text[:matches[0].start()].strip()
+    if pre:
+        sections.append(("Cover", pre))
+    for i, m in enumerate(matches):
+        start = m.end()
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
+        num, rest = m.group(1).upper(), m.group(2).strip()
+        title = f"ITEM {num}" + (f". {rest}" if rest else "")
+        # guard against false positives: ITEM headers are short lines
+        if len(m.group(0)) > 160:
+            # not really a header; fold into previous section
+            if sections:
+                t, b = sections[-1]
+                sections[-1] = (t, b + "\n" + text[m.start():end].strip())
+            continue
+        sections.append((title, text[start:end].strip()))
+    # Deduplicate: the table of contents and page headers repeat ITEM headers
+    # with near-empty bodies. Keep the longest body per ITEM number, in
+    # document order of first appearance.
+    best: dict[str, tuple[str, str]] = {}
+    order: list[str] = []
+    for title, body in sections:
+        key = title.split(".")[0].strip().upper()  # e.g. "ITEM 7"
+        if key not in best:
+            best[key] = (title, body)
+            order.append(key)
+        elif len(body) > len(best[key][1]):
+            best[key] = (title, body)
+    return [best[k] for k in order if best[k][1]]
+
+
+def load_text(path: str | Path, doc_id: str | None = None) -> list[dict]:
+    """Load a plain-text 10-K filing, splitting it into one document per
+    ITEM section (see :func:`split_10k_items`).
+
+    Returns a list of dicts with keys ``doc_id``, ``title``, ``section``,
+    ``text`` and ``source`` — ready for :func:`chunk_documents`.
+    """
+    path = Path(path)
+    doc_id = doc_id or path.stem
+    text = path.read_text(encoding="utf-8")
+    docs = []
+    for idx, (title, body) in enumerate(split_10k_items(text)):
+        docs.append({
+            "doc_id": f"{doc_id}#s{idx}",
+            "title": title,
+            "section": title,
+            "text": body,
+            "source": str(path),
+        })
+    return docs
+
+
 def chunk_documents(
     docs: list[dict],
     chunk_size: int = 600,
