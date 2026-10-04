@@ -7,6 +7,7 @@ pointing at the source document and section — so every claim is traceable.
 
 from __future__ import annotations
 
+import json
 import re
 import time
 from dataclasses import dataclass, field
@@ -16,6 +17,7 @@ from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
 
 from .chunking import Chunk, chunk_documents, load_markdown, split_sentences
 from .embeddings import Embedder, get_embedder
+from .hybrid import HybridVectorStore
 from .store import SearchResult, VectorStore
 
 #: Below this cosine similarity the corpus is considered to have no answer.
@@ -95,22 +97,52 @@ class RAGPipeline:
     def __init__(
         self,
         embedder: Embedder | None = None,
+        retrieval: str = "tfidf",
+        dense_model: str = "all-MiniLM-L6-v2",
+        hybrid_method: str = "rrf",
+        hybrid_alpha: float = 0.5,
         chunk_size: int = 600,
         overlap: int = 120,
         chunk_strategy: str = "recursive",
         top_k: int = 4,
     ) -> None:
-        self.embedder = embedder or get_embedder("tfidf")
+        """``retrieval``: ``"tfidf"`` (sparse, default), ``"dense"``
+        (sentence-transformers), or ``"hybrid"`` (both, fused).
+
+        ``hybrid_method`` is ``"rrf"`` or ``"weighted"`` (see
+        :mod:`ragbox.hybrid`); ``hybrid_alpha`` only applies to ``"weighted"``.
+        The dense model downloads on first use (~90MB) and needs the optional
+        ``sentence-transformers`` package.
+        """
+        if retrieval not in ("tfidf", "dense", "hybrid"):
+            raise ValueError(f"Unknown retrieval {retrieval!r}; "
+                             "use 'tfidf', 'dense' or 'hybrid'")
+        self.embedder = embedder or get_embedder("tfidf")  # sparse side
+        self.retrieval = retrieval
+        self._dense_model = dense_model
+        self._dense_embedder: Embedder | None = None
+        self.hybrid_method = hybrid_method
+        self.hybrid_alpha = hybrid_alpha
         self.chunk_size = chunk_size
         self.overlap = overlap
         self.chunk_strategy = chunk_strategy
         self.top_k = top_k
-        self.store = VectorStore()
-        self._embedder_spec = "tfidf"
+        self.store = HybridVectorStore() if retrieval == "hybrid" else VectorStore()
+
+    @property
+    def dense_embedder(self) -> Embedder:
+        """Lazily built dense embedder: tfidf-only use never touches torch."""
+        if self._dense_embedder is None:
+            self._dense_embedder = get_embedder(f"sbert:{self._dense_model}")
+        return self._dense_embedder
 
     # -- indexing ---------------------------------------------------------
     def index_documents(self, docs: list[dict]) -> int:
-        """Chunk + embed a list of document dicts. Returns chunk count."""
+        """Chunk + embed a list of document dicts. Returns chunk count.
+
+        ``"hybrid"`` embeds every chunk twice (sparse + dense);
+        ``"dense"`` embeds dense-only; ``"tfidf"`` sparse-only.
+        """
         chunks = chunk_documents(
             docs,
             chunk_size=self.chunk_size,
@@ -121,8 +153,13 @@ class RAGPipeline:
             return 0
         embed_texts = [_embed_text(c) for c in chunks]
         self.embedder.fit(embed_texts)
-        vectors = self.embedder.embed(embed_texts)
-        self.store.add(chunks, vectors)
+        if self.retrieval == "hybrid":
+            sparse_vectors = self.embedder.embed(embed_texts)
+            dense_vectors = self.dense_embedder.embed(embed_texts)
+            self.store.add(chunks, sparse_vectors, dense_vectors)
+        else:
+            active = self.dense_embedder if self.retrieval == "dense" else self.embedder
+            self.store.add(chunks, active.embed(embed_texts))
         return len(chunks)
 
     def index_directory(self, corpus_dir: str | Path, pattern: str = "*.md") -> int:
@@ -134,8 +171,16 @@ class RAGPipeline:
 
     # -- retrieval --------------------------------------------------------
     def retrieve(self, question: str, top_k: int | None = None) -> list[SearchResult]:
-        qv = self.embedder.embed([question])[0]
-        return self.store.search(qv, top_k=top_k or self.top_k)
+        k = top_k or self.top_k
+        if self.retrieval == "hybrid":
+            qs = self.embedder.embed([question])[0]
+            qd = self.dense_embedder.embed([question])[0]
+            return self.store.search(qs, qd, top_k=k,
+                                     method=self.hybrid_method,
+                                     alpha=self.hybrid_alpha)
+        active = self.dense_embedder if self.retrieval == "dense" else self.embedder
+        qv = active.embed([question])[0]
+        return self.store.search(qv, top_k=k)
 
     # -- answering --------------------------------------------------------
     def answer(self, question: str, top_k: int | None = None) -> CitedAnswer:
@@ -207,14 +252,41 @@ class RAGPipeline:
 
     # -- persistence ------------------------------------------------------
     def save(self, directory: str | Path) -> Path:
-        """Persist the store; the embedder is refit from chunks on load."""
-        return self.store.save(directory)
+        """Persist the store plus the retrieval configuration."""
+        path = self.store.save(directory)
+        (path / "retriever.json").write_text(json.dumps({
+            "retrieval": self.retrieval,
+            "dense_model": self._dense_model,
+            "hybrid_method": self.hybrid_method,
+            "hybrid_alpha": self.hybrid_alpha,
+        }, indent=1), encoding="utf-8")
+        return path
 
     @classmethod
     def load(cls, directory: str | Path, **kwargs) -> "RAGPipeline":
-        """Load a pipeline whose store was written with :meth:`save`."""
-        pipe = cls(**kwargs)
-        pipe.store = VectorStore.load(directory)
+        """Load a pipeline whose store was written with :meth:`save`.
+
+        The retrieval mode is read from ``retriever.json``; explicit keyword
+        arguments override the saved configuration.
+        """
+        directory = Path(directory)
+        cfg: dict = {}
+        rp = directory / "retriever.json"
+        if rp.exists():
+            cfg = json.loads(rp.read_text(encoding="utf-8"))
+        cfg.update(kwargs)
+        retrieval = cfg.get("retrieval", "tfidf")
+        init_kwargs = {
+            "retrieval": retrieval,
+            "dense_model": cfg.get("dense_model", "all-MiniLM-L6-v2"),
+            "hybrid_method": cfg.get("hybrid_method", "rrf"),
+            "hybrid_alpha": cfg.get("hybrid_alpha", 0.5),
+        }
+        init_kwargs.update({k: v for k, v in kwargs.items()
+                            if k in ("chunk_size", "overlap", "chunk_strategy", "top_k")})
+        pipe = cls(**init_kwargs)
+        pipe.store = (HybridVectorStore.load(directory) if retrieval == "hybrid"
+                      else VectorStore.load(directory))
         if len(pipe.store):
             pipe.embedder.fit([_embed_text(c) for c in pipe.store.chunks])
         return pipe

@@ -209,5 +209,71 @@ class TestEdgarCleaning(unittest.TestCase):
             Path(tmp).unlink()
 
 
+class TestHybridFusion(unittest.TestCase):
+    """Score-fusion math needs no neural models; test it directly."""
+
+    def test_rrf_prefers_consensus(self):
+        import numpy as np
+        from ragbox.hybrid import rrf_fuse
+        # chunk 1 is ranked 1st by dense but absent from sparse;
+        # chunk 0 appears in both rankings -> consensus wins
+        fused = rrf_fuse([np.array([1, 0]), np.array([0])], k=60)
+        self.assertGreater(fused[0], fused[1])
+
+    def test_rrf_ignores_score_scale(self):
+        import numpy as np
+        from ragbox.hybrid import fuse_scores
+        dense = np.array([1000.0, 0.0, 0.0])   # wildly different scale
+        sparse = np.array([0.9, 0.0, 0.0])
+        fused = fuse_scores(dense, sparse, method="rrf")
+        self.assertEqual(int(np.argmax(fused)), 0)
+
+    def test_weighted_alpha_extremes(self):
+        import numpy as np
+        from ragbox.hybrid import fuse_scores
+        dense = np.array([0.1, 0.9])
+        sparse = np.array([0.9, 0.1])
+        self.assertEqual(int(np.argmax(fuse_scores(dense, sparse, method="weighted", alpha=1.0))), 1)
+        self.assertEqual(int(np.argmax(fuse_scores(dense, sparse, method="weighted", alpha=0.0))), 0)
+
+    def test_weighted_rejects_bad_alpha(self):
+        import numpy as np
+        from ragbox.hybrid import weighted_fuse
+        with self.assertRaises(ValueError):
+            weighted_fuse(np.array([0.5]), np.array([0.5]), alpha=1.5)
+
+    def test_hybrid_store_end_to_end_tfidf_only(self):
+        # HybridVectorStore works with plain TF-IDF vectors on both sides;
+        # exercises add/search/save/load without needing torch.
+        import tempfile
+        import numpy as np
+        from ragbox.chunking import Chunk
+        from ragbox.embeddings import TfidfEmbedder
+        from ragbox.hybrid import HybridVectorStore
+        texts = ["apple iphone revenue growth", "microsoft azure cloud services",
+                 "nvidia gpu data center chips"]
+        chunks = [Chunk(text=t, doc_id=f"d{i}", chunk_id=f"d{i}#c0") for i, t in enumerate(texts)]
+        emb = TfidfEmbedder().fit(texts)
+        vecs = emb.embed(texts)
+        store = HybridVectorStore()
+        store.add(chunks, vecs, vecs)
+        qv = emb.embed(["cloud revenue"])[0]
+        for method in ("rrf", "weighted"):
+            res = store.search(qv, qv, top_k=2, method=method)
+            self.assertEqual(len(res), 2)
+            self.assertTrue(all(r.score >= 0 for r in res))
+        with tempfile.TemporaryDirectory() as tmp:
+            store.save(tmp)
+            loaded = HybridVectorStore.load(tmp)
+            self.assertEqual(len(loaded), 3)
+            res = loaded.search(qv, qv, top_k=1, method="rrf")
+            self.assertEqual(len(res), 1)
+
+    def test_pipeline_rejects_bad_retrieval(self):
+        from ragbox.pipeline import RAGPipeline
+        with self.assertRaises(ValueError):
+            RAGPipeline(retrieval="quantum")
+
+
 if __name__ == "__main__":
     unittest.main()
