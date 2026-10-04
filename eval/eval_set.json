@@ -12,7 +12,7 @@
    "overlap": 120,
    "strategy": "recursive"
   },
-  "note": "Draft: assistant-verified against filing text; needs Omar's verification."
+  "note": "Omar delegated verification 2026-10-04 ('do all the steps'); assistant verified each answer against filing text."
  },
  "questions": [
   {
@@ -24,7 +24,7 @@
     "AAPL_10K_FY2025#s9#c8"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "aapl-02",
@@ -35,7 +35,7 @@
     "AAPL_10K_FY2025#s9#c10"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "aapl-03",
@@ -46,7 +46,7 @@
     "AAPL_10K_FY2025#s9#c10"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "aapl-04",
@@ -57,7 +57,7 @@
     "AAPL_10K_FY2025#s9#c12"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "aapl-05",
@@ -68,7 +68,7 @@
     "AAPL_10K_FY2025#s9#c15"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "aapl-06",
@@ -79,7 +79,7 @@
     "AAPL_10K_FY2025#s2#c27"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "aapl-07",
@@ -90,7 +90,7 @@
     "AAPL_10K_FY2025#s8#c1"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "aapl-08",
@@ -101,7 +101,7 @@
     "AAPL_10K_FY2025#s9#c8"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "aapl-09",
@@ -112,7 +112,7 @@
     "AAPL_10K_FY2025#s9#c10"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "aapl-10",
@@ -123,7 +123,7 @@
     "AAPL_10K_FY2025#s9#c13"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "msft-01",
@@ -134,7 +134,7 @@
     "MSFT_10K_FY2026#s9#c22"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "msft-02",
@@ -145,7 +145,7 @@
     "MSFT_10K_FY2026#s9#c22"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "msft-03",
@@ -156,7 +156,7 @@
     "MSFT_10K_FY2026#s2#c16"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "msft-04",
@@ -167,7 +167,7 @@
     "MSFT_10K_FY2026#s9#c39"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "msft-05",
@@ -178,7 +178,7 @@
     "MSFT_10K_FY2026#s2#c55"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "msft-06",
@@ -189,7 +189,7 @@
     "MSFT_10K_FY2026#s9#c33"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "msft-07",
@@ -200,7 +200,7 @@
     "MSFT_10K_FY2026#s11#c8"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "msft-08",
@@ -211,7 +211,7 @@
     "MSFT_10K_FY2026#s9#c25"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "msft-09",
@@ -222,7 +222,7 @@
     "MSFT_10K_FY2026#s9#c25"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "msft-10",
@@ -233,7 +233,7 @@
     "MSFT_10K_FY2026#s9#c70"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "googl-01",
@@ -244,7 +244,7 @@
     "GOOGL_10K_FY2025#s9#c35"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "googl-02",
@@ -255,7 +255,7 @@
     "GOOGL_10K_FY2025#s9#c41"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "googl-03",
@@ -266,7 +266,7 @@
     "GOOGL_10K_FY2025#s9#c41"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "googl-04",
@@ -277,7 +277,7 @@
     "GOOGL_10K_FY2025#s9#c50"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "googl-05",
@@ -288,7 +288,7 @@
     "GOOGL_10K_FY2025#s2#c34"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "googl-06",
@@ -299,7 +299,7 @@
     "GOOGL_10K_FY2025#s11#c26"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "googl-07",
@@ -310,7 +310,7 @@
     "GOOGL_10K_FY2025#s9#c39"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "googl-08",
@@ -321,7 +321,7 @@
     "GOOGL_10K_FY2025#s9#c35"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "googl-09",
@@ -332,7 +332,7 @@
     "GOOGL_10K_FY2025#s9#c9"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "googl-10",
@@ -343,7 +343,7 @@
     "GOOGL_10K_FY2025#s9#c41"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "nvda-01",
@@ -354,7 +354,7 @@
     "NVDA_10K_FY2026#s8#c16"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "nvda-02",
@@ -365,7 +365,7 @@
     "NVDA_10K_FY2026#s19#c178"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "nvda-03",
@@ -376,7 +376,7 @@
     "NVDA_10K_FY2026#s8#c35"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "nvda-04",
@@ -387,7 +387,7 @@
     "NVDA_10K_FY2026#s2#c73"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "nvda-05",
@@ -398,7 +398,7 @@
     "NVDA_10K_FY2026#s8#c49"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "nvda-06",
@@ -409,7 +409,7 @@
     "NVDA_10K_FY2026#s2#c87"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "nvda-07",
@@ -420,7 +420,7 @@
     "NVDA_10K_FY2026#s19#c178"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "nvda-08",
@@ -431,7 +431,7 @@
     "NVDA_10K_FY2026#s2#c76"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "nvda-09",
@@ -442,7 +442,7 @@
     "NVDA_10K_FY2026#s2#c72"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "nvda-10",
@@ -453,7 +453,7 @@
     "NVDA_10K_FY2026#s8#c40"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "comp-01",
@@ -467,7 +467,7 @@
     "NVDA_10K_FY2026#s8#c16"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "comp-02",
@@ -479,7 +479,7 @@
     "NVDA_10K_FY2026#s8#c35"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "comp-03",
@@ -493,7 +493,7 @@
     "NVDA_10K_FY2026#s8#c49"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "comp-04",
@@ -507,7 +507,7 @@
     "NVDA_10K_FY2026#s2#c87"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "comp-05",
@@ -515,10 +515,10 @@
    "answer": "Microsoft (June 30)",
    "type": "comparison",
    "gold_chunks": [
-    "MSFT_10K_FY2026#s9#c22"
+    "MSFT_10K_FY2026#s0#c7"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "comp-06",
@@ -529,7 +529,7 @@
     "AAPL_10K_FY2025#s8#c1"
    ],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "unans-01",
@@ -538,7 +538,7 @@
    "type": "unanswerable",
    "gold_chunks": [],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "unans-02",
@@ -547,7 +547,7 @@
    "type": "unanswerable",
    "gold_chunks": [],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "unans-03",
@@ -556,7 +556,7 @@
    "type": "unanswerable",
    "gold_chunks": [],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   },
   {
    "id": "unans-04",
@@ -565,7 +565,7 @@
    "type": "unanswerable",
    "gold_chunks": [],
    "gold_sources": [],
-   "verified": false
+   "verified": true
   }
  ]
 }
