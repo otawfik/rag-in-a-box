@@ -275,5 +275,118 @@ class TestHybridFusion(unittest.TestCase):
             RAGPipeline(retrieval="quantum")
 
 
+class StubGenerator:
+    """Stands in for Generator in tests: no model download."""
+
+    def __init__(self, text="Stub answer [1]", refused=False, judge_answer=True):
+        self.text = text
+        self.refused = refused
+        self.judge_answer = judge_answer
+        self.judge_calls = 0
+        self.generate_calls = 0
+        self.last_passages = None
+
+    def judge(self, question, passages):
+        self.judge_calls += 1
+        return self.judge_answer
+
+    def generate(self, question, passages, sources=None):
+        from ragbox.generate import GeneratedAnswer, extract_citations
+        self.generate_calls += 1
+        self.last_passages = passages
+        # mirror Generator.generate: best-effort markers, else all passages
+        cited = extract_citations(self.text, len(passages)) or list(range(len(passages)))
+        return GeneratedAnswer(
+            question=question, text=self.text, refused=self.refused,
+            cited=cited,
+            passages=list(passages), sources=list(sources or []),
+        )
+
+
+class TestGeneration(unittest.TestCase):
+    def test_is_refusal(self):
+        from ragbox.generate import REFUSAL_TEXT, is_refusal
+        self.assertTrue(is_refusal(REFUSAL_TEXT))
+        self.assertTrue(is_refusal("i cannot answer this from the provided filings"))
+        self.assertTrue(is_refusal("Sorry, I cannot answer that from the provided filings."))
+        self.assertFalse(is_refusal("Revenue was $100 [1]."))
+        self.assertFalse(is_refusal(""))
+
+    def test_extract_citations(self):
+        from ragbox.generate import extract_citations
+        self.assertEqual(extract_citations("Blah [2] blah [1] blah [2].", 3), [1, 0])
+        self.assertEqual(extract_citations("No citations here.", 3), [])
+        # hallucinated citation [9] with only 2 passages: dropped
+        self.assertEqual(extract_citations("Blah [9] blah [1].", 2), [0])
+
+    def test_build_prompt_numbers_passages(self):
+        from ragbox.generate import build_prompt
+        msgs = build_prompt("Q?", ["first passage", "second passage"])
+        self.assertEqual(len(msgs), 2)  # system + user; no few-shot needed
+        self.assertEqual(msgs[0]["role"], "system")
+        self.assertIn("[1]\nfirst passage", msgs[1]["content"])
+        self.assertIn("[2]\nsecond passage", msgs[1]["content"])
+
+    def test_build_judge_prompt(self):
+        from ragbox.generate import build_judge_prompt
+        msgs = build_judge_prompt("Q?", ["a passage"])
+        self.assertEqual(len(msgs), 1)
+        self.assertIn("YES or NO", msgs[0]["content"])
+        self.assertIn("[1]\na passage", msgs[0]["content"])
+
+    def test_layer1_refusal_never_calls_llm(self):
+        from ragbox.pipeline import RAGPipeline
+        pipe = RAGPipeline()
+        pipe.index_documents(TINY_DOCS)
+        stub = StubGenerator()
+        ans = pipe.generate("xqzv blorpt wumpus zzzq", generator=stub)
+        self.assertTrue(ans.refused)
+        self.assertEqual(stub.judge_calls, 0)     # judge never invoked
+        self.assertEqual(stub.generate_calls, 0)  # LLM never invoked
+
+    def test_layer2_judge_no_refuses(self):
+        from ragbox.pipeline import RAGPipeline
+        pipe = RAGPipeline()
+        pipe.index_documents(TINY_DOCS)
+        stub = StubGenerator(judge_answer=False)
+        ans = pipe.generate("What are cats?", generator=stub)
+        self.assertTrue(ans.refused)
+        self.assertEqual(stub.judge_calls, 1)
+        self.assertEqual(stub.generate_calls, 0)  # no generation after NO
+
+    def test_layer2_judge_yes_generates(self):
+        from ragbox.pipeline import RAGPipeline
+        pipe = RAGPipeline()
+        pipe.index_documents(TINY_DOCS)
+        stub = StubGenerator(text="Cats are mammals [1].", judge_answer=True)
+        ans = pipe.generate("What are cats?", generator=stub)
+        self.assertFalse(ans.refused)
+        self.assertEqual(stub.judge_calls, 1)
+        self.assertEqual(stub.generate_calls, 1)
+        self.assertGreater(len(stub.last_passages), 0)
+        self.assertEqual(ans.cited, [0])
+        self.assertTrue(ans.sources)
+
+    def test_judge_ablation(self):
+        from ragbox.pipeline import RAGPipeline
+        pipe = RAGPipeline()
+        pipe.index_documents(TINY_DOCS)
+        stub = StubGenerator(text="Cats are mammals [1].", judge_answer=False)
+        ans = pipe.generate("What are cats?", generator=stub, judge=False)
+        self.assertFalse(ans.refused)  # judge skipped: generates anyway
+        self.assertEqual(stub.judge_calls, 0)
+
+    def test_citations_fall_back_to_all_passages(self):
+        from ragbox.pipeline import RAGPipeline
+        pipe = RAGPipeline()
+        pipe.index_documents(TINY_DOCS)
+        stub = StubGenerator(text="Cats are mammals.", judge_answer=True)
+        ans = pipe.generate("What are cats?", generator=stub)
+        self.assertFalse(ans.refused)
+        # model emitted no markers: cite every passage it was conditioned on
+        self.assertEqual(ans.cited, list(range(len(stub.last_passages))))
+        self.assertGreater(len(ans.cited), 0)
+
+
 if __name__ == "__main__":
     unittest.main()

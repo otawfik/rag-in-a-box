@@ -93,6 +93,42 @@ methods are supported via `hybrid_method=`:
 Dense mode needs the optional heavy dependency (`pip install
 sentence-transformers`, pulls in torch); TF-IDF works without it.
 
+## LLM answer generation (local, grounded, cite-or-refuse)
+
+```bash
+pip install transformers  # + torch; ~3GB model download on first use
+```
+
+```python
+pipe = RAGPipeline(retrieval="hybrid")
+ans = pipe.generate("What risks does NVIDIA flag around export controls?")
+print(ans.text)      # fluent answer synthesized from the passages
+print(ans.refused)   # True when the filings don't contain the answer
+print(ans.sources)   # the [n]-numbered passages behind the answer
+```
+
+`pipe.generate()` runs a local instruction-tuned model
+(Qwen2.5-1.5B-Instruct by default, swap with `llm_model=`) over the retrieved
+passages. Three refusal layers:
+
+1. **Retrieval gate** — nothing relevant retrieved, refuse without calling
+   the LLM at all.
+2. **Relevance judge** — a binary YES/NO call asking whether the passages
+   contain the answer; NO refuses. A joint answer-or-refuse prompt makes
+   small models refuse everything, so judgment and generation are split.
+3. **Empty-output guard** — a blank generation is refused.
+
+Citations are passage-level: the answer is conditioned solely on the cited
+passages, and the judge confirmed they contain the answer. (Per-claim `[n]`
+markers turned out to be beyond a 1.5B model — seven prompt variants
+tested, none reliable — so we don't fake them. Per-sentence provenance is
+still available from the extractive `pipe.answer()`.)
+
+Failure modes to know: judge over-refusal, parametric leakage (small models
+sometimes answer from their own weights anyway), threshold brittleness in
+the retrieval gate, and up to two LLM calls per question (~30-60s on CPU).
+See `ragbox/generate.py` for the full discussion.
+
 ## SEC EDGAR 10-K ingestion
 
 ```bash
@@ -115,6 +151,7 @@ rag-in-a-box/
 │   ├── chunking.py        # chunking strategies, markdown + 10-K text loading
 │   ├── edgar.py           # SEC EDGAR 10-K downloader + HTML cleaner
 │   ├── embeddings.py      # swappable Embedder backends (TF-IDF, sBERT)
+│   ├── generate.py          # local LLM grounded generation, cite-or-refuse
 │   ├── hybrid.py          # hybrid sparse+dense store, RRF / weighted fusion
 │   ├── store.py           # vector store, cosine search, persistence
 │   └── pipeline.py        # RAGPipeline: index → retrieve → cited answer

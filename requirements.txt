@@ -8,3 +8,8 @@ beautifulsoup4>=4.12  # SEC EDGAR 10-K HTML cleaning
 # Optional: dense neural embeddings + hybrid retrieval (see ragbox/hybrid.py).
 # Heavy (~2GB with torch); TF-IDF works without it.
 # sentence-transformers>=2.2
+
+# Optional: local LLM answer generation (see ragbox/generate.py).
+# Needs torch (CPU works, slow) and a ~3GB model download on first use.
+# transformers>=4.40
+# accelerate>=0.30

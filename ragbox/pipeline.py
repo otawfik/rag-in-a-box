@@ -17,6 +17,7 @@ from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
 
 from .chunking import Chunk, chunk_documents, load_markdown, split_sentences
 from .embeddings import Embedder, get_embedder
+from .generate import REFUSAL_TEXT, GeneratedAnswer, Generator
 from .hybrid import HybridVectorStore
 from .store import SearchResult, VectorStore
 
@@ -101,6 +102,7 @@ class RAGPipeline:
         dense_model: str = "all-MiniLM-L6-v2",
         hybrid_method: str = "rrf",
         hybrid_alpha: float = 0.5,
+        llm_model: str = "Qwen/Qwen2.5-1.5B-Instruct",
         chunk_size: int = 600,
         overlap: int = 120,
         chunk_strategy: str = "recursive",
@@ -123,6 +125,8 @@ class RAGPipeline:
         self._dense_embedder: Embedder | None = None
         self.hybrid_method = hybrid_method
         self.hybrid_alpha = hybrid_alpha
+        self._llm_model = llm_model
+        self._generator: Generator | None = None
         self.chunk_size = chunk_size
         self.overlap = overlap
         self.chunk_strategy = chunk_strategy
@@ -135,6 +139,13 @@ class RAGPipeline:
         if self._dense_embedder is None:
             self._dense_embedder = get_embedder(f"sbert:{self._dense_model}")
         return self._dense_embedder
+
+    @property
+    def generator(self) -> Generator:
+        """Lazily built LLM: import-time never requires transformers."""
+        if self._generator is None:
+            self._generator = Generator(model_name=self._llm_model)
+        return self._generator
 
     # -- indexing ---------------------------------------------------------
     def index_documents(self, docs: list[dict]) -> int:
@@ -250,6 +261,57 @@ class RAGPipeline:
             latency_ms=(time.perf_counter() - started) * 1000,
         )
 
+    # -- LLM generation ---------------------------------------------------
+    def _retrieval_has_answer(self, results: list[SearchResult]) -> bool:
+        """Layer-1 refusal gate: did retrieval find anything relevant?
+
+        For TF-IDF/dense this is a cosine floor (MIN_RELEVANCE). Hybrid RRF
+        scores are rank-fusions, not cosine similarities, so no threshold
+        applies — any non-empty ranking passes and the LLM's own refusal
+        (layer 2) becomes the backstop.
+        """
+        if not results:
+            return False
+        if self.retrieval == "hybrid":
+            return True
+        return any(r.score >= MIN_RELEVANCE for r in results)
+
+    def generate(self, question: str, top_k: int | None = None,
+                 generator: Generator | None = None,
+                 judge: bool = True) -> GeneratedAnswer:
+        """Answer ``question`` with the LLM, grounded in retrieved passages.
+
+        Three refusal layers: (1) retrieval finds nothing relevant -> refuse
+        without calling the LLM; (2) the relevance judge says NO -> refuse;
+        (3) generation yields zero valid citations -> refuse as ungrounded.
+        Pass ``judge=False`` to ablate layer 2. A custom ``generator`` (real
+        or stub) can be injected, which is also how the tests avoid loading
+        a 1.5B model.
+        """
+        started = time.perf_counter()
+
+        def _refused() -> GeneratedAnswer:
+            return GeneratedAnswer(
+                question=question,
+                text=REFUSAL_TEXT,
+                refused=True,
+                latency_ms=(time.perf_counter() - started) * 1000,
+            )
+
+        results = self.retrieve(question, top_k=top_k)
+        if not self._retrieval_has_answer(results):  # layer 1
+            return _refused()
+        gen = generator or self.generator
+        passages = [r.chunk.text for r in results]
+        sources = [
+            {"doc_id": r.chunk.doc_id, "section": r.chunk.section,
+             "score": round(r.score, 4)}
+            for r in results
+        ]
+        if judge and not gen.judge(question, passages):  # layer 2
+            return _refused()
+        return gen.generate(question, passages, sources=sources)  # layer 3
+
     # -- persistence ------------------------------------------------------
     def save(self, directory: str | Path) -> Path:
         """Persist the store plus the retrieval configuration."""
@@ -259,6 +321,7 @@ class RAGPipeline:
             "dense_model": self._dense_model,
             "hybrid_method": self.hybrid_method,
             "hybrid_alpha": self.hybrid_alpha,
+            "llm_model": self._llm_model,
         }, indent=1), encoding="utf-8")
         return path
 
@@ -281,6 +344,7 @@ class RAGPipeline:
             "dense_model": cfg.get("dense_model", "all-MiniLM-L6-v2"),
             "hybrid_method": cfg.get("hybrid_method", "rrf"),
             "hybrid_alpha": cfg.get("hybrid_alpha", 0.5),
+            "llm_model": cfg.get("llm_model", "Qwen/Qwen2.5-1.5B-Instruct"),
         }
         init_kwargs.update({k: v for k, v in kwargs.items()
                             if k in ("chunk_size", "overlap", "chunk_strategy", "top_k")})
