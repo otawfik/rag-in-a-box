@@ -1,0 +1,571 @@
+{
+ "meta": {
+  "created": "2026-10-04",
+  "corpus": [
+   "AAPL_10K_FY2025",
+   "MSFT_10K_FY2026",
+   "GOOGL_10K_FY2025",
+   "NVDA_10K_FY2026"
+  ],
+  "chunking": {
+   "chunk_size": 600,
+   "overlap": 120,
+   "strategy": "recursive"
+  },
+  "note": "Draft: assistant-verified against filing text; needs Omar's verification."
+ },
+ "questions": [
+  {
+   "id": "aapl-01",
+   "question": "What was Apple's total net sales in fiscal 2025?",
+   "answer": "$416.2 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "AAPL_10K_FY2025#s9#c8"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "aapl-02",
+   "question": "What was Apple's iPhone net sales in fiscal 2025?",
+   "answer": "$209.6 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "AAPL_10K_FY2025#s9#c10"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "aapl-03",
+   "question": "What was Apple's Services net sales in fiscal 2025?",
+   "answer": "$109.2 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "AAPL_10K_FY2025#s9#c10"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "aapl-04",
+   "question": "What was Apple's total gross margin percentage in fiscal 2025?",
+   "answer": "46.9%",
+   "type": "factual",
+   "gold_chunks": [
+    "AAPL_10K_FY2025#s9#c12"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "aapl-05",
+   "question": "How much did Apple spend on research and development in fiscal 2025?",
+   "answer": "$34.6 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "AAPL_10K_FY2025#s9#c15"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "aapl-06",
+   "question": "How many full-time equivalent employees did Apple have as of September 2025?",
+   "answer": "approximately 166,000",
+   "type": "factual",
+   "gold_chunks": [
+    "AAPL_10K_FY2025#s2#c27"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "aapl-07",
+   "question": "What size share repurchase program did Apple announce in May 2025?",
+   "answer": "$100 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "AAPL_10K_FY2025#s8#c1"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "aapl-08",
+   "question": "Which geographic segment had the highest net sales for Apple in fiscal 2025?",
+   "answer": "Americas ($178.4 billion)",
+   "type": "factual",
+   "gold_chunks": [
+    "AAPL_10K_FY2025#s9#c8"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "aapl-09",
+   "question": "What was Apple's Mac net sales in fiscal 2025?",
+   "answer": "$33.7 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "AAPL_10K_FY2025#s9#c10"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "aapl-10",
+   "question": "What hurt Apple's Products gross margin percentage in fiscal 2025?",
+   "answer": "tariff costs and product mix",
+   "type": "factual",
+   "gold_chunks": [
+    "AAPL_10K_FY2025#s9#c13"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "msft-01",
+   "question": "What was Microsoft's total revenue in fiscal 2026?",
+   "answer": "$331.8 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "MSFT_10K_FY2026#s9#c22"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "msft-02",
+   "question": "What was Microsoft's operating income in fiscal 2026?",
+   "answer": "$155.2 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "MSFT_10K_FY2026#s9#c22"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "msft-03",
+   "question": "What are Microsoft's three reportable segments?",
+   "answer": "Productivity and Business Processes, Intelligent Cloud, More Personal Computing",
+   "type": "factual",
+   "gold_chunks": [
+    "MSFT_10K_FY2026#s2#c16"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "msft-04",
+   "question": "How much did Microsoft spend on research and development in fiscal 2026?",
+   "answer": "$35.6 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "MSFT_10K_FY2026#s9#c39"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "msft-05",
+   "question": "How many people did Microsoft employ as of June 30, 2026?",
+   "answer": "approximately 223,000",
+   "type": "factual",
+   "gold_chunks": [
+    "MSFT_10K_FY2026#s2#c55"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "msft-06",
+   "question": "By what percentage did Azure and other cloud services revenue grow in fiscal 2026?",
+   "answer": "41%",
+   "type": "factual",
+   "gold_chunks": [
+    "MSFT_10K_FY2026#s9#c33"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "msft-07",
+   "question": "What were Microsoft's cash dividends declared per share in fiscal 2026?",
+   "answer": "$3.64",
+   "type": "factual",
+   "gold_chunks": [
+    "MSFT_10K_FY2026#s11#c8"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "msft-08",
+   "question": "What was Microsoft Cloud gross margin percentage in fiscal 2026?",
+   "answer": "66%",
+   "type": "factual",
+   "gold_chunks": [
+    "MSFT_10K_FY2026#s9#c25"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "msft-09",
+   "question": "What does Microsoft cite as pressuring Microsoft Cloud gross margin?",
+   "answer": "continued investments in AI infrastructure and growing AI product usage",
+   "type": "factual",
+   "gold_chunks": [
+    "MSFT_10K_FY2026#s9#c25"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "msft-10",
+   "question": "How much did Microsoft spend on share repurchases in fiscal 2026?",
+   "answer": "$16.7 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "MSFT_10K_FY2026#s9#c70"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "googl-01",
+   "question": "What were Alphabet's total revenues in 2025?",
+   "answer": "$402.8 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "GOOGL_10K_FY2025#s9#c35"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "googl-02",
+   "question": "What was Alphabet's YouTube ads revenue in 2025?",
+   "answer": "$40.4 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "GOOGL_10K_FY2025#s9#c41"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "googl-03",
+   "question": "What was Google Cloud revenue in 2025?",
+   "answer": "$58.7 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "GOOGL_10K_FY2025#s9#c41"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "googl-04",
+   "question": "How much did Alphabet spend on research and development in 2025?",
+   "answer": "$61.1 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "GOOGL_10K_FY2025#s9#c50"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "googl-05",
+   "question": "How many employees did Alphabet have as of December 31, 2025?",
+   "answer": "190,820",
+   "type": "factual",
+   "gold_chunks": [
+    "GOOGL_10K_FY2025#s2#c34"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "googl-06",
+   "question": "How much did Alphabet spend on share repurchases in 2025?",
+   "answer": "$62.2 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "GOOGL_10K_FY2025#s11#c26"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "googl-07",
+   "question": "What were Alphabet's capital expenditures in 2025?",
+   "answer": "$91.4 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "GOOGL_10K_FY2025#s9#c39"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "googl-08",
+   "question": "What was Alphabet's net income in 2025?",
+   "answer": "$132.2 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "GOOGL_10K_FY2025#s9#c35"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "googl-09",
+   "question": "What does Alphabet expect for traffic acquisition costs as ad revenue grows?",
+   "answer": "TAC to increase",
+   "type": "factual",
+   "gold_chunks": [
+    "GOOGL_10K_FY2025#s9#c9"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "googl-10",
+   "question": "What was Google Search & other revenue in 2025?",
+   "answer": "$224.5 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "GOOGL_10K_FY2025#s9#c41"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "nvda-01",
+   "question": "What was NVIDIA's total revenue in fiscal 2026?",
+   "answer": "$215.9 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "NVDA_10K_FY2026#s8#c16"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "nvda-02",
+   "question": "What was NVIDIA's Data Center revenue in fiscal 2026?",
+   "answer": "$193.7 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "NVDA_10K_FY2026#s19#c178"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "nvda-03",
+   "question": "What was NVIDIA's gross margin percentage in fiscal 2026?",
+   "answer": "71.1%",
+   "type": "factual",
+   "gold_chunks": [
+    "NVDA_10K_FY2026#s8#c35"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "nvda-04",
+   "question": "How large was the charge NVIDIA took for H20 excess inventory?",
+   "answer": "$4.5 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "NVDA_10K_FY2026#s2#c73"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "nvda-05",
+   "question": "How much did NVIDIA spend on research and development in fiscal 2026?",
+   "answer": "$18.5 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "NVDA_10K_FY2026#s8#c49"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "nvda-06",
+   "question": "How many employees did NVIDIA have at the end of fiscal 2026?",
+   "answer": "approximately 42,000",
+   "type": "factual",
+   "gold_chunks": [
+    "NVDA_10K_FY2026#s2#c87"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "nvda-07",
+   "question": "What was NVIDIA's Gaming revenue in fiscal 2026?",
+   "answer": "$16.0 billion",
+   "type": "factual",
+   "gold_chunks": [
+    "NVDA_10K_FY2026#s19#c178"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "nvda-08",
+   "question": "What export-control risk does NVIDIA flag?",
+   "answer": "U.S. export controls on H20/AI chips to China",
+   "type": "factual",
+   "gold_chunks": [
+    "NVDA_10K_FY2026#s2#c76"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "nvda-09",
+   "question": "What caused NVIDIA's H20 inventory charge?",
+   "answer": "U.S. export licensing requirements for H20 sales to China",
+   "type": "factual",
+   "gold_chunks": [
+    "NVDA_10K_FY2026#s2#c72"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "nvda-10",
+   "question": "What customer concentration risk does NVIDIA disclose?",
+   "answer": "revenue concentrated among a limited number of direct and indirect customers",
+   "type": "factual",
+   "gold_chunks": [
+    "NVDA_10K_FY2026#s8#c40"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "comp-01",
+   "question": "Which of the four companies reported the highest total revenue?",
+   "answer": "Apple ($416.2B)",
+   "type": "comparison",
+   "gold_chunks": [
+    "AAPL_10K_FY2025#s9#c8",
+    "MSFT_10K_FY2026#s9#c22",
+    "GOOGL_10K_FY2025#s9#c35",
+    "NVDA_10K_FY2026#s8#c16"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "comp-02",
+   "question": "Which of the four companies had the highest gross margin percentage?",
+   "answer": "NVIDIA (71.1%)",
+   "type": "comparison",
+   "gold_chunks": [
+    "AAPL_10K_FY2025#s9#c12",
+    "NVDA_10K_FY2026#s8#c35"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "comp-03",
+   "question": "Which of the four companies spent the most on R&D in absolute dollars?",
+   "answer": "Alphabet ($61.1B)",
+   "type": "comparison",
+   "gold_chunks": [
+    "AAPL_10K_FY2025#s9#c15",
+    "MSFT_10K_FY2026#s9#c39",
+    "GOOGL_10K_FY2025#s9#c50",
+    "NVDA_10K_FY2026#s8#c49"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "comp-04",
+   "question": "Which of the four companies has the largest headcount?",
+   "answer": "Microsoft (~223,000)",
+   "type": "comparison",
+   "gold_chunks": [
+    "AAPL_10K_FY2025#s2#c27",
+    "MSFT_10K_FY2026#s2#c55",
+    "GOOGL_10K_FY2025#s2#c34",
+    "NVDA_10K_FY2026#s2#c87"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "comp-05",
+   "question": "Which company's fiscal year ends in June?",
+   "answer": "Microsoft (June 30)",
+   "type": "comparison",
+   "gold_chunks": [
+    "MSFT_10K_FY2026#s9#c22"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "comp-06",
+   "question": "Which company announced the largest new share repurchase program in these filings?",
+   "answer": "Apple ($100B, May 2025)",
+   "type": "comparison",
+   "gold_chunks": [
+    "AAPL_10K_FY2025#s8#c1"
+   ],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "unans-01",
+   "question": "What was Tesla's total revenue in 2025?",
+   "answer": "refuse: Tesla is not in the corpus",
+   "type": "unanswerable",
+   "gold_chunks": [],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "unans-02",
+   "question": "How many Apple retail stores are in France?",
+   "answer": "refuse: not disclosed in the 10-K",
+   "type": "unanswerable",
+   "gold_chunks": [],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "unans-03",
+   "question": "What is Microsoft's CEO's favorite programming language?",
+   "answer": "refuse: not in the filings",
+   "type": "unanswerable",
+   "gold_chunks": [],
+   "gold_sources": [],
+   "verified": false
+  },
+  {
+   "id": "unans-04",
+   "question": "What was NVIDIA's revenue in fiscal 2019?",
+   "answer": "refuse: this 10-K only covers FY2024-2026",
+   "type": "unanswerable",
+   "gold_chunks": [],
+   "gold_sources": [],
+   "verified": false
+  }
+ ]
+}

@@ -259,19 +259,24 @@ def split_10k_items(text: str) -> list[tuple[str, str]]:
                 sections[-1] = (t, b + "\n" + text[m.start():end].strip())
             continue
         sections.append((title, text[start:end].strip()))
-    # Deduplicate: the table of contents and page headers repeat ITEM headers
-    # with near-empty bodies. Keep the longest body per ITEM number, in
-    # document order of first appearance.
-    best: dict[str, tuple[str, str]] = {}
+    # Merge: page headers/footers repeat ITEM headers dozens of times (e.g.
+    # MSFT's "ITEM 8. FINANCIAL STATEMENTS" appears 40x), splitting real
+    # sections into fragments. Drop near-empty fragments (TOC entries,
+    # page-number phantoms) and concatenate the rest per ITEM number in
+    # document order so no real content is lost.
+    merged: dict[str, tuple[str, str]] = {}
     order: list[str] = []
     for title, body in sections:
+        if len(body) < 50:
+            continue
         key = title.split(".")[0].strip().upper()  # e.g. "ITEM 7"
-        if key not in best:
-            best[key] = (title, body)
+        if key not in merged:
+            merged[key] = (title, body)
             order.append(key)
-        elif len(body) > len(best[key][1]):
-            best[key] = (title, body)
-    return [best[k] for k in order if best[k][1]]
+        else:
+            t, b = merged[key]
+            merged[key] = (t, b + "\n\n" + body)
+    return [merged[k] for k in order if merged[k][1]]
 
 
 def load_text(path: str | Path, doc_id: str | None = None) -> list[dict]:

@@ -166,14 +166,15 @@ class TestEdgarCleaning(unittest.TestCase):
     def test_split_10k_items(self):
         from ragbox.chunking import split_10k_items
         sections = split_10k_items(
-            "Cover page text here.\nITEM 1. Business\nBody one.\n"
-            "ITEM 1A. Risk Factors\nBody two.\n"
+            "Cover page text here, long enough to survive the phantom filter. "
+            "Padding padding padding.\nITEM 1. Business\n" + "Body one. " * 20 + "\n"
+            "ITEM 1A. Risk Factors\n" + "Body two. " * 20 + "\n"
         )
         titles = [t for t, _ in sections]
         self.assertIn("Cover", titles)
         self.assertTrue(any(t.startswith("ITEM 1.") for t in titles))
         self.assertTrue(any(t.startswith("ITEM 1A") for t in titles))
-        body = dict(sections)["ITEM 1. Business"]
+        body = dict(sections)[[t for t in titles if t.startswith("ITEM 1.")][0]]
         self.assertIn("Body one.", body)
 
     def test_split_10k_items_no_headers(self):
@@ -182,10 +183,11 @@ class TestEdgarCleaning(unittest.TestCase):
         self.assertEqual(len(sections), 1)
         self.assertEqual(sections[0][0], "Full filing")
 
-    def test_split_10k_items_dedupes_toc_phantoms(self):
+    def test_split_10k_items_merges_page_header_fragments(self):
         from ragbox.chunking import split_10k_items
         text = ("ITEM 1. Business\nITEM 1A. Risk Factors\n"  # table of contents
                 "ITEM 1. Business\n" + "Real business body. " * 50 + "\n"
+                "ITEM 1. Business\n" + "Page-header fragment body. " * 50 + "\n"
                 "ITEM 1A. Risk Factors\n" + "Real risks body. " * 50 + "\n")
         sections = split_10k_items(text)
         titles = [t for t, _ in sections]
@@ -193,12 +195,13 @@ class TestEdgarCleaning(unittest.TestCase):
         self.assertTrue(any(t.startswith("ITEM 1.") for t in titles))
         body = dict(sections)[titles[0]]
         self.assertIn("Real business body.", body)
+        self.assertIn("Page-header fragment body.", body)
 
     def test_load_text_sections(self):
         import tempfile
         from ragbox.chunking import load_text
         with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False) as fh:
-            fh.write("ITEM 7. Management Discussion\nMD&A body text here.\n")
+            fh.write("ITEM 7. Management Discussion\n" + "MD&A body text here. " * 20 + "\n")
             tmp = fh.name
         try:
             docs = load_text(tmp, doc_id="TEST_10K")
@@ -387,6 +390,25 @@ class TestGeneration(unittest.TestCase):
         self.assertEqual(ans.cited, list(range(len(stub.last_passages))))
         self.assertGreater(len(ans.cited), 0)
 
+
+class TestEvalSet(unittest.TestCase):
+
+    def test_eval_set_roundtrip(self):
+        import tempfile
+        from ragbox.eval import EvalQuestion, load_eval_set, save_eval_set
+        qs = [EvalQuestion(id="q1", question="Rev?", answer="$1B",
+                           type="factual", gold_chunks=["d#s0#c0"])]
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as fh:
+            tmp = fh.name
+        try:
+            save_eval_set(qs, tmp, meta={"chunking": {"chunk_size": 600}})
+            meta2, qs2 = load_eval_set(tmp)
+            self.assertEqual(len(qs2), 1)
+            self.assertEqual(qs2[0].answer, "$1B")
+            self.assertFalse(qs2[0].verified)
+            self.assertEqual(meta2["chunking"]["chunk_size"], 600)
+        finally:
+            Path(tmp).unlink()
 
 if __name__ == "__main__":
     unittest.main()
