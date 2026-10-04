@@ -120,8 +120,12 @@ def html_to_text(html: bytes | str) -> str:
     for ln in (ln.strip() for ln in text.split("\n")):
         if not ln:
             continue
-        # drop page numbers, dot leaders, and bare figure lines
-        if re.fullmatch(r"[\d\W]+", ln) and not re.search(r"[A-Za-z]{3,}", ln):
+        # drop page numbers (bare 1-4 digit lines)...
+        if re.fullmatch(r"\d{1,4}", ln):
+            continue
+        # ...and dot leaders / horizontal rules, but KEEP table figures
+        # like "$ 201,183" or "42.5%": dropping those guts financial tables
+        if re.fullmatch(r"[.\-–—_]+", ln):
             continue
         kept.append(ln)
     text = "\n".join(kept)

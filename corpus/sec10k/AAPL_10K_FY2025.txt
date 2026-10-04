@@ -5,25 +5,35 @@ Washington, D.C. 20549
 FORM
 10-K
 (Mark One)
+☒
 ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
 For the fiscal year ended
 September 27
+, 2025
 or
+☐
 TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
 For the transition period from
 to
 Commission File Number:
+001-36743
 Apple Inc.
 (Exact name of Registrant as specified in its charter)
 California
+94-2404110
 (State or other jurisdiction
 of incorporation or organization)
 (I.R.S. Employer Identification No.)
 One Apple Park Way
 Cupertino
+,
 California
+95014
 (Address of principal executive offices)
 (Zip Code)
+(
+)
+996-1010
 (Registrant’s telephone number, including area code)
 Securities registered pursuant to Section 12(b) of the Act:
 Title of each class
@@ -49,31 +59,52 @@ The Nasdaq Stock Market LLC
 Securities registered pursuant to Section 12(g) of the Act: None
 Indicate by check mark if the Registrant is a well-known seasoned issuer, as defined in Rule 405 of the Securities Act.
 Yes
+☒
 No
+☐
 Indicate by check mark if the Registrant is not required to file reports pursuant to Section 13 or Section 15(d) of the Act.
 Yes
+☐
 No
+☒
 Indicate by check mark whether the Registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the Registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days.
 Yes
+☒
 No
+☐
 Indicate by check mark whether the Registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (§232.405 of this chapter) during the preceding 12 months (or for such shorter period that the Registrant was required to submit such files).
 Yes
+☒
 No
+☐
 Indicate by check mark whether the Registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, a smaller reporting company, or an emerging growth company. See the definitions of “large accelerated filer,” “accelerated filer,” “smaller reporting company,” and “emerging growth company” in Rule 12b-2 of the Exchange Act.
 Large accelerated filer
+☒
 Accelerated filer
+☐
 Non-accelerated filer
+☐
 Smaller reporting company
+☐
 Emerging growth company
+☐
 If an emerging growth company, indicate by check mark if the Registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act.
+☐
 Indicate by check mark whether the Registrant has filed a report on and attestation to its management’s assessment of the effectiveness of its internal control over financial reporting under Section 404(b) of the Sarbanes-Oxley Act (15 U.S.C. 7262(b)) by the registered public accounting firm that prepared or issued its audit report.
+☒
 If securities are registered pursuant to Section 12(b) of the Act, indicate by check mark whether the financial statements of the registrant included in the filing reflect the correction of an error to previously issued financial statements.
+☐
 Indicate by check mark whether any of those error corrections are restatements that required a recovery analysis of incentive-based compensation received by any of the registrant’s executive officers during the relevant recovery period pursuant to §240.10D-1(b).
+☐
 Indicate by check mark whether the Registrant is a shell company (as defined in Rule 12b-2 of the Act).
 Yes
+☐
 No
+☒
 The aggregate market value of the voting and non-voting stock held by non-affiliates of the Registrant, as of March 28, 2025, the last business day of the Registrant’s most recently completed second fiscal quarter, was approximately $
+3,253,431,000,000
 . Solely for purposes of this disclosure, shares of common stock held by executive officers and directors of the Registrant as of such date have been excluded because such persons may be deemed to be affiliates. This determination of executive officers and directors as affiliates is not necessarily a conclusive determination for any other purposes.
+14,776,353,000
 shares of common stock were issued and outstanding as of October 17, 2025.
 DOCUMENTS INCORPORATED BY REFERENCE
 Portions of the Registrant’s definitive proxy statement relating to its 2026 annual meeting of shareholders are incorporated by reference into Part III of this Annual Report on Form 10-K where indicated. The Registrant’s definitive proxy statement will be filed with the U.S. Securities and Exchange Commission within 120 days after the end of the fiscal year to which this report relates.
@@ -141,37 +172,64 @@ The Company designs, manufactures and markets smartphones, personal computers, t
 Products
 iPhone
 iPhone
+®
 is the Company’s line of smartphones based on its iOS operating system. The iPhone line includes iPhone 17 Pro, iPhone Air™, iPhone 17, iPhone 16 and iPhone 16e.
 Mac
 Mac
+®
 is the Company’s line of personal computers based on its macOS
+®
 operating system. The Mac line includes laptops MacBook Air
+®
 and MacBook Pro
+®
 , as well as desktops iMac
+®
 , Mac mini
+®
 , Mac Studio
+®
 and Mac Pro
+®
 iPad
 iPad
+®
 is the Company’s line of multipurpose tablets based on its iPadOS
+®
 operating system. The iPad line includes iPad Pro
+®
 , iPad Air
+®
 , iPad and iPad mini
+®
 Wearables, Home and Accessories
 Wearables includes smartwatches, wireless headphones and spatial computers. The Company’s line of smartwatches, based on its watchOS
+®
 operating system, includes Apple Watch
+®
 Series 11, Apple Watch SE
+®
 3 and Apple Watch Ultra
+®
 3. The Company’s line of wireless headphones includes AirPods
+®
 , AirPods Pro
+®
 , AirPods Max
+®
 and Beats
+®
 products. Apple Vision Pro™ is the Company’s spatial computer based on its visionOS
+®
 operating system.
 Home includes Apple TV 4K
+®
 , the Company’s media streaming and gaming device based on its tvOS
+®
 operating system, and HomePod
+®
 and HomePod mini
+®
 , high-fidelity wireless smart speakers.
 Accessories includes Apple-branded and third-party accessories.
 Apple Inc. | 2025 Form 10-K | 1
@@ -180,21 +238,31 @@ Advertising
 The Company’s advertising services include third-party licensing arrangements and the Company’s own advertising platforms.
 AppleCare
 The Company offers a portfolio of fee-based service and support products under the AppleCare
+®
 brand. The offerings provide priority access to Apple technical support, access to the global Apple authorized service network for repair and replacement services, and in many cases additional coverage for instances of accidental damage or theft and loss, depending on the country and type of product.
 Cloud Services
 The Company’s cloud services store and keep customers’ content up-to-date and available across multiple Apple devices and Windows personal computers.
 Digital Content
 The Company operates various platforms, including the App Store
+®
+,
 that allow customers to discover and download applications and digital content, such as books, music, video, games and podcasts.
 The Company also offers digital content through subscription-based services, including Apple Arcade
+®
 , a game service; Apple Fitness+
+®
 , a personalized fitness service; Apple Music
+®
 , which offers users a curated listening experience with on-demand radio stations; Apple News+
+®
 , a news and magazine service; and Apple TV
+®
 , which offers exclusive original content and live sports.
 Payment Services
 The Company offers payment services, including Apple Card
+®
 , a co-branded credit card, and Apple Pay
+®
 , a cashless payment service.
 Segments
 The Company manages its business primarily on a geographic basis. The Company’s reportable segments consist of the Americas, Europe, Greater China, Japan and Rest of Asia Pacific. Americas includes both North and South America. Europe includes European countries, as well as India, the Middle East and Africa. Greater China includes China mainland, Hong Kong and Taiwan. Rest of Asia Pacific includes Australia, New Zealand and those Asian countries not included in the Company’s other reportable segments. Although the reportable segments provide similar hardware and software products and similar services, each one is managed separately to better align with the location of the Company’s customers and distribution partners and the unique market dynamics of each geographic region.
@@ -318,6 +386,7 @@ Apple Inc. | 2025 Form 10-K | 13
 The technology industry, including, in some instances, the Company, is subject to intense media, political and regulatory scrutiny, which exposes the Company to increasing regulation, government investigations, legal actions and penalties.
 From time to time, the Company has made changes to its business, including actions taken in response to litigation, competition, market conditions and legal and regulatory requirements. The Company expects to make further business changes in the future. For example, in the U.S., the Company has implemented changes to how developers communicate with consumers within apps on the U.S. storefront of the iOS and iPadOS App Store regarding alternative purchasing mechanisms and is currently subject to a court order preventing it from imposing any commission or fee on certain purchases that consumers make.
 Globally, several jurisdictions have adopted, or may in the future adopt, competition-related laws and regulations imposing wide-ranging obligations on technology companies and significant limitations on businesses, including the Company. For example, the Company has implemented changes to iOS, iPadOS, the App Store and Safari
+®
 in the EU as it seeks to comply with the Digital Markets Act (“DMA”), including new business terms and alternative fee structures for iOS and iPadOS apps, alternative methods of distribution for iOS and iPadOS apps, alternative payment processing for apps across the Company’s operating systems, and additional tools and application programming interfaces for developers. The Company has also continued to make changes to its compliance plan in response to feedback and engagement with the Commission. Although the Company’s compliance plan is intended to address the DMA’s obligations, it has been challenged by the Commission and may be challenged further by private litigants. The DMA provides for significant fines and penalties for noncompliance. While the changes introduced by the Company in the EU are intended to reduce new privacy and security risks that the DMA poses to EU users, many risks will remain. Changes to the Company’s business in response to the DMA or other laws and regulations could materially adversely affect the Company’s business, reputation, results of operations, financial condition and stock price.
 The Company is also currently subject to antitrust investigations and litigation in various jurisdictions around the world, which can result in legal proceedings and claims against the Company that could, individually or in the aggregate, have a material adverse impact on the Company’s business, results of operations, financial condition and stock price. For example, the Company is subject to civil antitrust lawsuits in the U.S. alleging monopolization or attempted monopolization in the markets for “performance smartphones” and “smartphones” generally in violation of U.S. antitrust laws. In addition, the Company is the subject of investigations in Europe and other jurisdictions relating to App Store terms and conditions. If such investigations or litigation are resolved against the Company, the Company can be exposed to significant fines and may be required to make further changes to its business practices, all of which could materially adversely affect the Company’s business, reputation, results of operations, financial condition and stock price.
 Further, the Company has commercial relationships with other companies in the technology industry that are or may become subject to investigations and litigation that, if resolved against those other companies, could materially adversely affect the Company’s commercial relationships with those business partners and materially adversely affect the Company’s business, results of operations, financial condition and stock price. For example, the Company earns revenue from licensing arrangements with Google LLC (“Google”) and other companies to offer their search services on the Company’s platforms and applications, and certain of these arrangements are currently subject to government investigations and legal proceedings. On August 5, 2024, Google was found to have violated U.S. antitrust laws. In connection with this finding, on September 2, 2025, the U.S. District Court for the District of Columbia (“D.C. District Court”) ordered certain remedies. The court’s order is subject to further proceedings before the D.C. District Court, which may result in changes to the interpretation or application of the remedies ordered by the court, as well as new or changed remedies being ordered. The court’s order is also subject to appeal by both the U.S. Department of Justice (“DOJ”) and Google. A reversal of the order on appeal could result in imposition of certain remedies initially proposed by the DOJ, such as those prohibiting Google from offering the Company commercial terms for search distribution. If implemented, these remedies could materially adversely affect the Company’s ability to earn revenue from such licensing arrangements.
@@ -401,13 +470,30 @@ Announced Plans or Programs
 Approximate Dollar Value of
 Shares That May Yet Be Purchased
 Under the Plans or Programs
+(1)
 June 29, 2025 to August 2, 2025:
 Open market and privately negotiated purchases
+33,265
+$
+210.43
+33,265
 August 3, 2025 to August 30, 2025:
 Open market and privately negotiated purchases
+28,986
+$
+224.25
+28,986
 August 31, 2025 to September 27, 2025:
 Open market and privately negotiated purchases
+27,247
+$
+238.56
+27,247
 Total
+89,498
+$
+99,779
+(1)
 On May 2, 2024, the Company announced a program to repurchase up to $110 billion of the Company’s common stock. During the fourth quarter of 2025, the Company utilized the final $19.8 billion under the May 2024 program. On May 1, 2025, the Company announced an additional program to repurchase up to $100 billion of the Company’s common stock. As of September 27, 2025, $221 million of the May 2025 program had been utilized. The programs do not obligate the Company to acquire a minimum amount of shares. Under the programs, shares may be repurchased in privately negotiated or open market transactions, including under plans complying with Rule 10b5-1 under the Exchange Act.
 Apple Inc. | 2025 Form 10-K | 19
 Company Stock Performance
@@ -419,8 +505,26 @@ September 2023
 September 2024
 September 2025
 Apple Inc.
+$
+$
+$
+$
+$
+$
 S&P 500 Index
+$
+$
+$
+$
+$
+$
 Dow Jones U.S. Technology Total Stock Market Index
+$
+$
+$
+$
+$
+$
 Item 6. [Reserved]
 Apple Inc. | 2025 Form 10-K | 20
 Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
@@ -428,21 +532,34 @@ The following discussion should be read in conjunction with the consolidated fin
 Product, Service and Software Announcements
 The Company announces new product, service and software offerings at various times during the year. Significant announcements during fiscal year 2025 included the following:
 First Quarter 2025:
+•
 MacBook Pro
+•
 Mac mini
+•
 iMac
+•
 iPad mini
 Second Quarter 2025:
+•
 iPhone 16e
+•
 iPad Air
+•
 iPad
+•
 MacBook Air
+•
 Mac Studio
 Third Quarter 2025:
+•
 iOS 26, macOS Tahoe 26, iPadOS 26, watchOS 26, visionOS 26 and tvOS 26
 Fourth Quarter 2025:
+•
 iPhone 17, iPhone Air, iPhone 17 Pro and iPhone 17 Pro Max
+•
 Apple Watch Series 11, Apple Watch SE 3 and Apple Watch Ultra 3
+•
 AirPods Pro 3
 Fiscal Period
 The Company’s fiscal year is the 52- or 53-week period that ends on the last Saturday of September. An additional week is included in the first fiscal quarter every five or six years to realign the Company’s fiscal quarters with calendar quarters, which occurred in the first quarter of 2023. The Company’s fiscal years 2025 and 2024 spanned 52 weeks each, whereas fiscal year 2023 spanned 53 weeks.
@@ -456,11 +573,49 @@ The following table shows net sales by reportable segment for 2025, 2024 and 202
 Change
 Change
 Americas
+$
+178,353
+%
+$
+167,045
+%
+$
+162,560
 Europe
+111,032
+%
+101,328
+%
+94,294
 Greater China
+64,377
+(4)
+%
+66,952
+(8)
+%
+72,559
 Japan
+28,703
+%
+25,052
+%
+24,257
 Rest of Asia Pacific
+33,696
+%
+30,658
+%
+29,615
 Total net sales
+$
+416,161
+%
+$
+391,035
+%
+$
+383,285
 Americas
 Americas net sales increased during 2025 compared to 2024 primarily due to higher net sales of iPhone and Services. The weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on Americas net sales during 2025.
 Europe
@@ -477,11 +632,52 @@ The following table shows net sales by category for 2025, 2024 and 2023 (dollars
 Change
 Change
 iPhone
+$
+209,586
+%
+$
+201,183
+%
+$
+200,583
 Mac
+33,708
+%
+29,984
+%
+29,357
 iPad
+28,023
+%
+26,694
+(6)
+%
+28,300
 Wearables, Home and Accessories
+35,686
+(4)
+%
+37,005
+(7)
+%
+39,845
 Services
+(1)
+109,158
+%
+96,169
+%
+85,200
 Total net sales
+$
+416,161
+%
+$
+391,035
+%
+$
+383,285
+(1)
 Services net sales include amortization of the deferred value of services bundled in the sales price of certain products.
 iPhone
 iPhone net sales increased during 2025 compared to 2024 due to higher net sales of Pro models.
@@ -498,12 +694,45 @@ Gross Margin
 Products and Services gross margin and gross margin percentage for 2025, 2024 and 2023 were as follows (dollars in millions):
 Gross margin:
 Products
+$
+112,887
+$
+109,633
+$
+108,803
 Services
+82,314
+71,050
+60,345
 Total gross margin
+$
+195,201
+$
+180,683
+$
+169,148
 Gross margin percentage:
 Products
+36.8
+%
+37.2
+%
+36.5
+%
 Services
+75.4
+%
+73.9
+%
+70.8
+%
 Total gross margin percentage
+46.9
+%
+46.2
+%
+44.1
+%
 Products Gross Margin
 Products gross margin increased during 2025 compared to 2024 primarily due to favorable costs and a different mix of products, partially offset by tariff costs.
 Products gross margin percentage decreased during 2025 compared to 2024 primarily due to a different mix of products and tariff costs, partially offset by other favorable costs.
@@ -516,11 +745,44 @@ Operating expenses for 2025, 2024 and 2023 were as follows (dollars in millions)
 Change
 Change
 Research and development
+$
+34,550
+%
+$
+31,370
+%
+$
+29,915
 Percentage of total net sales
+%
+%
+%
 Selling, general and administrative
+$
+27,601
+%
+$
+26,097
+%
+$
+24,932
 Percentage of total net sales
+%
+%
+%
 Total operating expenses
+$
+62,151
+%
+$
+57,467
+%
+$
+54,847
 Percentage of total net sales
+%
+%
+%
 Research and Development
 The growth in R&D expense during 2025 compared to 2024 was primarily driven by increases in headcount-related expenses and infrastructure-related costs.
 Selling, General and Administrative
@@ -529,8 +791,23 @@ Apple Inc. | 2025 Form 10-K | 24
 Provision for Income Taxes
 Provision for income taxes, effective tax rate and statutory federal income tax rate for 2025, 2024 and 2023 were as follows (dollars in millions):
 Provision for income taxes
+$
+20,719
+$
+29,749
+$
+16,741
 Effective tax rate
+15.6
+%
+24.1
+%
+14.7
+%
 Statutory federal income tax rate
+%
+%
+%
 The Company’s effective tax rate for 2025 was lower than the statutory federal income tax rate primarily due to a lower effective tax rate on foreign earnings, including the impact of changes in unrecognized tax benefits, the impact of the U.S. federal R&D credit, and tax benefits from share-based compensation, partially offset by a change in valuation allowance and state income taxes.
 The Company’s effective tax rate for 2025 was lower compared to 2024 due to a $10.7 billion year-over-year decrease in the provision for income taxes related to the State Aid Decision (refer to Note 7, “Income Taxes” in the Notes to Consolidated Financial Statements in Part II, Item 8 of this Form 10-K) and the impact of changes in unrecognized tax benefits, partially offset by a change in valuation allowance and a higher effective tax rate on foreign earnings.
 Liquidity and Capital Resources
@@ -586,9 +863,15 @@ Potential Impact
 Investment portfolio
 100 basis points, all tenors
 Decline in fair value
+$
+2,416
+$
+2,755
 Term debt
 100 basis points, all tenors
 Increase in annual interest expense
+$
+$
 Foreign Exchange Rate Risk
 The Company’s exposure to foreign exchange rate risk relates primarily to the Company being a net receiver of currencies other than the U.S. dollar. Changes in exchange rates, and in particular a strengthening of the U.S. dollar, will negatively affect the Company’s net sales and gross margins as expressed in U.S. dollars. Fluctuations in exchange rates may also affect the fair values of certain of the Company’s assets and liabilities. To protect against foreign exchange rate risk, the Company may use derivative instruments, offset exposures, or adjust local currency pricing of its products and services. However, the Company may choose to not hedge certain foreign currency exposures for a variety of reasons, including accounting considerations or prohibitive cost.
 The Company applied a value-at-risk (“VAR”) model to its foreign currency derivative positions to assess the potential impact of fluctuations in exchange rates. The VAR model used a Monte Carlo simulation. The VAR is the maximum expected loss in fair value, for a given confidence interval, to the Company’s foreign currency derivative positions due to adverse movements in rates. Based on the results of the model, the Company estimates, with 95% confidence, a maximum one-day loss in fair value of $590 million and $538 million as of September 27, 2025 and September 28, 2024, respectively. Changes in the Company’s underlying foreign currency exposures, which were excluded from the assessment, generally offset changes in the fair values of the Company’s foreign currency derivatives.
@@ -614,28 +897,98 @@ September 28,
 September 30,
 Net sales:
 Products
+$
+307,003
+$
+294,866
+$
+298,085
 Services
+109,158
+96,169
+85,200
 Total net sales
+416,161
+391,035
+383,285
 Cost of sales:
 Products
+194,116
+185,233
+189,282
 Services
+26,844
+25,119
+24,855
 Total cost of sales
+220,960
+210,352
+214,137
 Gross margin
+195,201
+180,683
+169,148
 Operating expenses:
 Research and development
+34,550
+31,370
+29,915
 Selling, general and administrative
+27,601
+26,097
+24,932
 Total operating expenses
+62,151
+57,467
+54,847
 Operating income
+133,050
+123,216
+114,301
 Other income/(expense), net
+(
+)
+(
+)
 Income before provision for income taxes
+132,729
+123,485
+113,736
 Provision for income taxes
+20,719
+29,749
+16,741
 Net income
+$
+112,010
+$
+93,736
+$
+96,995
 Earnings per share:
 Basic
+$
+7.49
+$
+6.11
+$
+6.16
 Diluted
+$
+7.46
+$
+6.08
+$
+6.13
 Shares used in computing earnings per share:
 Basic
+14,948,500
+15,343,783
+15,744,231
 Diluted
+15,004,697
+15,408,095
+15,812,547
 See accompanying Notes to Consolidated Financial Statements.
 Apple Inc. | 2025 Form 10-K | 29
 Apple Inc.
@@ -646,18 +999,59 @@ September 27,
 September 28,
 September 30,
 Net income
+$
+112,010
+$
+93,736
+$
+96,995
 Other comprehensive income/(loss):
 Change in foreign currency translation, net of tax
+(
+)
+(
+)
 Change in unrealized gains/losses on derivative instruments, net of tax:
 Change in fair value of derivative instruments
+(
+)
 Adjustment for net (gains)/losses realized and included in net income
+(
+)
+(
+1,337
+)
+(
+1,717
+)
 Total change in unrealized gains/losses on derivative instruments
+(
+2,169
+)
+(
+1,394
+)
 Change in unrealized gains/losses on marketable debt securities, net of tax:
 Change in fair value of marketable debt securities
+5,850
+1,563
 Adjustment for net (gains)/losses realized and included in net income
 Total change in unrealized gains/losses on marketable debt securities
+1,231
+6,054
+1,816
 Total other comprehensive income/(loss)
+1,601
+4,280
+(
+)
 Total comprehensive income
+$
+113,611
+$
+98,016
+$
+96,652
 See accompanying Notes to Consolidated Financial Statements.
 Apple Inc. | 2025 Form 10-K | 30
 Apple Inc.
@@ -668,42 +1062,116 @@ September 28,
 ASSETS:
 Current assets:
 Cash and cash equivalents
+$
+35,934
+$
+29,943
 Marketable securities
+18,763
+35,228
 Accounts receivable, net
+39,777
+33,410
 Vendor non-trade receivables
+33,180
+32,833
 Inventories
+5,718
+7,286
 Other current assets
+14,585
+14,287
 Total current assets
+147,957
+152,987
 Non-current assets:
 Marketable securities
+77,723
+91,479
 Property, plant and equipment, net
+49,834
+45,680
 Other non-current assets
+83,727
+74,834
 Total non-current assets
+211,284
+211,993
 Total assets
+$
+359,241
+$
+364,980
 LIABILITIES AND SHAREHOLDERS’ EQUITY:
 Current liabilities:
 Accounts payable
+$
+69,860
+$
+68,960
 Other current liabilities
+66,387
+78,304
 Deferred revenue
+9,055
+8,249
 Commercial paper
+7,979
+9,967
 Term debt
+12,350
+10,912
 Total current liabilities
+165,631
+176,392
 Non-current liabilities:
 Term debt
+78,328
+85,750
 Other non-current liabilities
+41,549
+45,888
 Total non-current liabilities
+119,877
+131,638
 Total liabilities
+285,508
+308,030
 Commitments and contingencies
 Shareholders’ equity:
 Common stock and additional paid-in capital, $
+0.00001
 par value:
+50,400,000
 shares authorized;
+14,773,260
 and
+15,116,786
 shares issued and outstanding, respectively
+93,568
+83,276
 Accumulated deficit
+(
+14,264
+)
+(
+19,154
+)
 Accumulated other comprehensive loss
+(
+5,571
+)
+(
+7,172
+)
 Total shareholders’ equity
+73,733
+56,950
 Total liabilities and shareholders’ equity
+$
+359,241
+$
+364,980
 See accompanying Notes to Consolidated Financial Statements.
 Apple Inc. | 2025 Form 10-K | 31
 Apple Inc.
@@ -714,25 +1182,132 @@ September 27,
 September 28,
 September 30,
 Total shareholders’ equity, beginning balances
+$
+56,950
+$
+62,146
+$
+50,672
 Common stock and additional paid-in capital:
 Beginning balances
+83,276
+73,812
+64,849
 Common stock issued
+1,498
+1,423
+1,346
 Common stock withheld related to net share settlement of equity awards
+(
+4,452
+)
+(
+3,993
+)
+(
+3,521
+)
 Share-based compensation
+13,246
+12,034
+11,138
 Ending balances
+93,568
+83,276
+73,812
 Accumulated deficit:
 Beginning balances
+(
+19,154
+)
+(
+)
+(
+3,068
+)
 Net income
+112,010
+93,736
+96,995
 Dividends and dividend equivalents declared
+(
+15,413
+)
+(
+15,218
+)
+(
+14,996
+)
 Common stock withheld related to net share settlement of equity awards
+(
+1,655
+)
+(
+1,612
+)
+(
+2,099
+)
 Common stock repurchased
+(
+90,052
+)
+(
+95,846
+)
+(
+77,046
+)
 Ending balances
+(
+14,264
+)
+(
+19,154
+)
+(
+)
 Accumulated other comprehensive loss:
 Beginning balances
+(
+7,172
+)
+(
+11,452
+)
+(
+11,109
+)
 Other comprehensive income/(loss)
+1,601
+4,280
+(
+)
 Ending balances
+(
+5,571
+)
+(
+7,172
+)
+(
+11,452
+)
 Total shareholders’ equity, ending balances
+$
+73,733
+$
+56,950
+$
+62,146
 Dividends and dividend equivalents declared per share or RSU
+$
+1.02
+$
+0.98
+$
+0.94
 See accompanying Notes to Consolidated Financial Statements.
 Apple Inc. | 2025 Form 10-K | 32
 Apple Inc.
@@ -743,40 +1318,218 @@ September 27,
 September 28,
 September 30,
 Cash, cash equivalents, and restricted cash and cash equivalents, beginning balances
+$
+29,943
+$
+30,737
+$
+24,977
 Operating activities:
 Net income
+112,010
+93,736
+96,995
 Adjustments to reconcile net income to cash generated by operating activities:
 Depreciation and amortization
+11,698
+11,445
+11,519
 Share-based compensation expense
+12,863
+11,688
+10,833
 Other
+(
+)
+(
+2,266
+)
+(
+2,227
+)
 Changes in operating assets and liabilities:
 Accounts receivable, net
+(
+6,682
+)
+(
+3,788
+)
+(
+1,688
+)
 Vendor non-trade receivables
+(
+)
+(
+1,356
+)
+1,271
 Inventories
+1,400
+(
+1,046
+)
+(
+1,618
+)
 Other current and non-current assets
+(
+9,197
+)
+(
+11,731
+)
+(
+5,684
+)
 Accounts payable
+6,020
+(
+1,889
+)
 Other current and non-current liabilities
+(
+11,076
+)
+15,552
+3,031
 Cash generated by operating activities
+111,482
+118,254
+110,543
 Investing activities:
 Purchases of marketable securities
+(
+24,407
+)
+(
+48,656
+)
+(
+29,513
+)
 Proceeds from maturities of marketable securities
+40,907
+51,211
+39,686
 Proceeds from sales of marketable securities
+12,890
+11,135
+5,828
 Payments for acquisition of property, plant and equipment
+(
+12,715
+)
+(
+9,447
+)
+(
+10,959
+)
 Other
+(
+1,480
+)
+(
+1,308
+)
+(
+1,337
+)
 Cash generated by investing activities
+15,195
+2,935
+3,705
 Financing activities:
 Payments for taxes related to net share settlement of equity awards
+(
+5,960
+)
+(
+5,441
+)
+(
+5,431
+)
 Payments for dividends and dividend equivalents
+(
+15,421
+)
+(
+15,234
+)
+(
+15,025
+)
 Repurchases of common stock
+(
+90,711
+)
+(
+94,949
+)
+(
+77,550
+)
 Proceeds from issuance of term debt, net
+4,481
+5,228
 Repayments of term debt
+(
+10,932
+)
+(
+9,958
+)
+(
+11,151
+)
 Proceeds from/(Repayments of) commercial paper, net
+(
+2,032
+)
+3,960
+(
+3,978
+)
 Other
+(
+)
+(
+)
+(
+)
 Cash used in financing activities
+(
+120,686
+)
+(
+121,983
+)
+(
+108,488
+)
 Increase/(Decrease) in cash, cash equivalents, and restricted cash and cash equivalents
+5,991
+(
+)
+5,760
 Cash, cash equivalents, and restricted cash and cash equivalents, ending balances
+$
+35,934
+$
+29,943
+$
+30,737
 Supplemental cash flow disclosure:
 Cash paid for income taxes, net
+$
+43,369
+$
+26,102
+$
+18,679
 See accompanying Notes to Consolidated Financial Statements.
 Apple Inc. | 2025 Form 10-K | 33
 Apple Inc.
@@ -818,23 +1571,59 @@ The Company recognizes revenue at the amount to which it expects to be entitled 
 The Company records reductions to Products net sales related to future product returns, price protection and other customer incentive programs based on the Company’s expectations and historical experience.
 For arrangements with multiple performance obligations, which represent promises within an arrangement that are distinct, the Company allocates revenue to all distinct performance obligations based on their relative stand-alone selling prices (“SSPs”). When available, the Company uses observable prices to determine SSPs. When observable prices are not available, SSPs are established that reflect the Company’s best estimates of what the selling prices of the performance obligations would be if they were sold regularly on a stand-alone basis. The Company’s process for estimating SSPs without observable prices considers multiple factors that may vary depending upon the unique facts and circumstances related to each performance obligation including, where applicable, prices charged by the Company for similar offerings, market trends in the pricing for similar offerings, product-specific business objectives and the estimated cost to provide the performance obligation.
 The Company has identified the performance obligations regularly included in arrangements involving the sale of iPhone, Mac and iPad. The first material performance obligation, which represents the substantial portion of the allocated sales price, is the hardware and bundled software delivered at the time of sale. The second material performance obligation is the right to receive certain product-related bundled services, which include iCloud
+®
 , Siri
+®
 and Maps. The Company allocates revenue and any related discounts to all of its performance obligations based on their relative SSPs. Because the Company lacks observable prices for product-related bundled services, the allocation of revenue is based on the Company’s estimated SSPs. Revenue allocated to the delivered hardware and bundled software is recognized when control has transferred to the customer, which generally occurs when the product is shipped. Revenue allocated to product-related bundled services is deferred and recognized on a straight-line basis over the estimated period they are expected to be provided.
 For certain long-term service arrangements, the Company has performance obligations for services it has not yet delivered. For these arrangements, the Company does not have a right to bill for the undelivered services. The Company has determined that any unbilled consideration relates entirely to the value of the undelivered services. Accordingly, the Company has not recognized revenue, and does not disclose amounts, related to these undelivered services.
 For the sale of third-party products where the Company obtains control of the product before transferring it to the customer, the Company recognizes revenue based on the gross amount billed to customers. The Company considers multiple factors when determining whether it obtains control of third-party products, including evaluating if it can establish the price of the product, retains inventory risk for tangible products or has the responsibility for ensuring acceptability of the product. For third-party applications sold through the App Store, the Company does not obtain control of the product before transferring it to the customer. Therefore, the Company accounts for all third-party application–related sales on a net basis by recognizing in Services net sales only the commission it retains.
 Apple Inc. | 2025 Form 10-K | 35
 The following table shows disaggregated net sales, as well as the portion of total net sales that was previously deferred, for 2025, 2024 and 2023 (in millions):
 iPhone
+$
+209,586
+$
+201,183
+$
+200,583
 Mac
+33,708
+29,984
+29,357
 iPad
+28,023
+26,694
+28,300
 Wearables, Home and Accessories
+35,686
+37,005
+39,845
 Services
+(1)
+109,158
+96,169
+85,200
 Total net sales
+$
+416,161
+$
+391,035
+$
+383,285
 Portion of total net sales that was included in deferred revenue as of the beginning of the period
+$
+8,229
+$
+7,728
+$
+8,169
+(1)
 Services net sales include amortization of the deferred value of services bundled in the sales price of certain products.
 The Company’s proportion of net sales by disaggregated revenue source was generally consistent for each reportable segment in Note 13, “Segment Information and Geographic Data” for 2025, 2024 and 2023, except in Greater China, where iPhone revenue represented a moderately higher proportion of net sales.
 As of September 27, 2025 and September 28, 2024, the Company had total deferred revenue of $
+13.7
 billion and $
+12.8
 billion, respectively. As of September 27, 2025, the Company expects
 % of total deferred revenue to be realized in less than a year,
 % within one-to-two years,
@@ -845,12 +1634,39 @@ Earnings Per Share
 The following table shows the computation of basic and diluted earnings per share for 2025, 2024 and 2023 (net income in millions and shares in thousands):
 Numerator:
 Net income
+$
+112,010
+$
+93,736
+$
+96,995
 Denominator:
 Weighted-average basic shares outstanding
+14,948,500
+15,343,783
+15,744,231
 Effect of dilutive share-based awards
+56,197
+64,312
+68,316
 Weighted-average diluted shares
+15,004,697
+15,408,095
+15,812,547
 Basic earnings per share
+$
+7.49
+$
+6.11
+$
+6.16
 Diluted earnings per share
+$
+7.46
+$
+6.08
+$
+6.13
 Approximately
 million restricted stock units (“RSUs”) were excluded from the computation of diluted earnings per share for 2023 because their effect would have been antidilutive.
 Apple Inc. | 2025 Form 10-K | 36
@@ -876,21 +1692,98 @@ Non-Current
 Marketable
 Securities
 Cash
+$
+28,267
+$
+$
+$
+28,267
+$
+28,267
+$
+$
 Level 1:
 Money market funds
+5,272
+5,272
+5,272
 Mutual funds
+(
+)
 Subtotal
+5,951
+(
+)
+6,126
+5,272
 Level 2
+(1)
+:
 U.S. Treasury securities
+16,074
+(
+)
+15,848
+1,190
+3,712
+10,946
 U.S. agency securities
+5,269
+(
+)
+5,120
+2,456
+2,413
 Non-U.S. government securities
+6,586
+(
+)
+6,273
+5,418
 Certificates of deposit and time deposits
 Commercial paper
 Corporate debt securities
+47,210
+(
+)
+46,560
+10,623
+35,937
 Municipal securities
+(
+)
 Mortgage- and asset-backed securities
+24,130
+(
+1,252
+)
+23,004
+22,910
 Subtotal
+100,493
+(
+3,025
+)
+98,027
+2,395
+17,909
+77,723
 Total
+$
+134,711
+$
+$
+(
+3,027
+)
+$
+132,420
+$
+35,934
+$
+18,763
+$
+77,723
 Adjusted
 Cost
 Unrealized
@@ -909,25 +1802,109 @@ Non-Current
 Marketable
 Securities
 Cash
+$
+27,199
+$
+$
+$
+27,199
+$
+27,199
+$
+$
 Level 1:
 Money market funds
 Mutual funds
+(
+)
 Subtotal
+1,293
+(
+)
+1,395
 Level 2
+(1)
+:
 U.S. Treasury securities
+16,150
+(
+)
+15,679
+4,087
+11,380
 U.S. agency securities
+5,431
+(
+)
+5,159
+4,301
 Non-U.S. government securities
+17,959
+(
+)
+17,568
+1,158
+10,810
+5,600
 Certificates of deposit and time deposits
 Commercial paper
+1,066
+1,066
+1,038
 Corporate debt securities
+65,622
+(
+1,953
+)
+63,939
+16,027
+47,886
 Municipal securities
+(
+)
 Mortgage- and asset-backed securities
+24,595
+(
+1,403
+)
+23,367
+1,278
+22,089
 Subtotal
+132,108
+(
+4,635
+)
+128,056
+1,966
+34,611
+91,479
 Total
+(2)(3)
+$
+160,600
+$
+$
+(
+4,638
+)
+$
+156,650
+$
+29,943
+$
+35,228
+$
+91,479
+(1)
 The valuation techniques used to measure the fair values of the Company’s Level 2 financial instruments, which generally have counterparties with high credit ratings, are based on quoted market prices or model-driven valuations using significant inputs derived from or corroborated by observable market data.
+(2)
 As of September 28, 2024, cash and cash equivalents included $
+2.6
 billion held in escrow and restricted from general use. These restricted cash and cash equivalents were designated to settle the Company’s obligation related to the State Aid Decision (refer to Note 7, “Income Taxes”).
+(3)
 As of September 28, 2024, current marketable securities included $
+13.2
 billion held in escrow and restricted from general use. These restricted marketable securities were designated to settle the Company’s obligation related to the State Aid Decision (refer to Note 7, “Income Taxes”).
 Apple Inc. | 2025 Form 10-K | 37
 As of September 27, 2025,
@@ -957,13 +1934,27 @@ Apple Inc. | 2025 Form 10-K | 38
 The notional amounts of the Company’s outstanding derivative instruments as of September 27, 2025 and September 28, 2024, were as follows (in millions):
 Derivative instruments designated as accounting hedges:
 Foreign exchange contracts
+$
+62,647
+$
+64,069
 Interest rate contracts
+$
+12,875
+$
+14,575
 Derivative instruments not designated as accounting hedges:
 Foreign exchange contracts
+$
+109,079
+$
+91,493
 As of September 27, 2025 and September 28, 2024, the carrying amount of the Company’s
 current and non-current term debt
 subject to fair value hedges was $
+12.6
 billion and $
+13.5
 billion, respectively.
 Accounts Receivable
 Trade Receivables
@@ -982,18 +1973,42 @@ vendors that individually represented 10% or more of total vendor non-trade rece
 two
 vendors that individually represented 10% or more of total vendor non-trade receivables, which accounted for
 % and
+%.
 Note 5 –
 Property, Plant and Equipment
 The following table shows the Company’s gross property, plant and equipment by major asset class and accumulated depreciation as of September 27, 2025 and September 28, 2024 (in millions):
 Land and buildings
+$
+27,337
+$
+24,690
 Machinery, equipment and internal-use software
+83,420
+80,205
 Leasehold improvements
+15,091
+14,233
 Gross property, plant and equipment
+125,848
+119,128
 Accumulated depreciation
+(
+76,014
+)
+(
+73,448
+)
 Total property, plant and equipment, net
+$
+49,834
+$
+45,680
 Depreciation expense on property, plant and equipment was $
+8.0
 billion, $
+8.2
 billion and $
+8.5
 billion during 2025, 2024 and 2023, respectively.
 Apple Inc. | 2025 Form 10-K | 39
 Note 6 –
@@ -1001,13 +2016,35 @@ Consolidated Financial Statement Details
 The following tables show the Company’s consolidated financial statement details as of September 27, 2025 and September 28, 2024 (in millions):
 Other Non-Current Assets
 Deferred tax assets
+$
+20,777
+$
+19,499
 Other non-current assets
+62,950
+55,335
 Total other non-current assets
+$
+83,727
+$
+74,834
 Other Current Liabilities
 Income taxes payable
+$
+13,016
+$
+26,601
 Accrued distribution and marketing
+8,919
+7,679
 Other current liabilities
+44,452
+44,024
 Total other current liabilities
+$
+66,387
+$
+78,304
 Note 7 –
 Income Taxes
 European Commission State Aid Decision
@@ -1015,77 +2052,249 @@ On August 30, 2016, the Commission announced its decision that Ireland granted s
 two
 subsidiaries of the Company (“State Aid Decision”). The State Aid Decision ordered Ireland to calculate and recover additional taxes from the Company for the period June 2003 through December 2014. Irish legislative changes, effective as of January 2015, eliminated the application of the tax opinions from that date forward.
 The Company and Ireland appealed the State Aid Decision to the General Court of the Court of Justice of the European Union (“General Court”). On July 15, 2020, the General Court annulled the State Aid Decision. On September 25, 2020, the Commission appealed the General Court’s decision to the European Court of Justice (“ECJ”). On September 10, 2024, the ECJ announced that it had set aside the 2020 judgment of the General Court and confirmed the Commission’s 2016 State Aid Decision. As a result, during the fourth quarter of 2024 the Company recorded a one-time income tax charge of $
+10.2
 billion, net, which represented $
+15.8
 billion payable to Ireland via release of amounts held in escrow, partially offset by a U.S. foreign tax credit of $
+4.8
 billion and a decrease in unrecognized tax benefits of $
 million.
 Provision for Income Taxes and Effective Tax Rate
 The provision for income taxes for 2025, 2024 and 2023, consisted of the following (in millions):
 Federal:
 Current
+$
+11,487
+$
+5,571
+$
+9,445
 Deferred
+(
+1,804
+)
+(
+3,080
+)
+(
+3,644
+)
 Total
+9,683
+2,491
+5,801
 State:
 Current
+1,680
+1,726
+1,570
 Deferred
+(
+)
+(
+)
+(
+)
 Total
+1,541
+1,428
+1,521
 Foreign:
 Current
+8,891
+25,483
+8,750
 Deferred
 Total
+9,495
+25,830
+9,419
 Provision for income taxes
+$
+20,719
+$
+29,749
+$
+16,741
 Foreign pretax earnings were $
+82.0
 billion, $
+77.3
 billion and $
+72.9
 billion in 2025, 2024 and 2023, respectively.
 Apple Inc. | 2025 Form 10-K | 40
 A reconciliation of the provision for income taxes to the amount computed by applying the statutory federal income tax rate (
 % in 2025, 2024 and 2023) to income before provision for income taxes for 2025, 2024 and 2023 is as follows (dollars in millions):
 Computed expected tax
+$
+27,873
+$
+25,932
+$
+23,885
 Earnings of foreign subsidiaries
+(
+8,120
+)
+(
+5,311
+)
+(
+5,744
+)
 Change in valuation allowance
+2,091
 Research and development credit, net
+(
+1,049
+)
+(
+1,397
+)
+(
+1,212
+)
 Impact of the State Aid Decision
+(
+)
+10,246
 Other
+(
+)
 Provision for income taxes
+$
+20,719
+$
+29,749
+$
+16,741
 Effective tax rate
+15.6
+%
+24.1
+%
+14.7
+%
 Deferred Tax Assets and Liabilities
 As of September 27, 2025 and September 28, 2024, the significant components of the Company’s deferred tax assets and liabilities were as follows (in millions):
 Deferred tax assets:
 Capitalized research and development
+$
+15,041
+$
+10,739
 Tax credit carryforwards
+8,643
+8,856
 Accrued liabilities and other reserves
+6,154
+6,114
 Deferred revenue
+2,953
+3,413
 Lease liabilities
+2,577
+2,410
 Other
+3,049
+3,341
 Total deferred tax assets
+38,417
+34,873
 Less: Valuation allowance
+(
+10,966
+)
+(
+8,866
+)
 Total deferred tax assets, net
+27,451
+26,007
 Deferred tax liabilities:
 Depreciation
+3,276
+2,551
 Right-of-use assets
+2,300
+2,125
 Minimum tax on foreign earnings
+1,217
+1,674
 Other
 Total deferred tax liabilities
+7,471
+6,805
 Net deferred tax assets
+$
+19,980
+$
+19,202
 As of September 27, 2025, the Company had $
+4.7
 billion in foreign tax credit carryforwards in Ireland and $
+4.0
 billion in California R&D credit carryforwards, both of which can be carried forward indefinitely. A valuation allowance has been recorded for the credit carryforwards and a portion of other temporary differences.
 Apple Inc. | 2025 Form 10-K | 41
 Uncertain Tax Positions
 As of September 27, 2025, the total amount of gross unrecognized tax benefits was $
+23.2
 billion, of which $
+10.6
 billion, if recognized, would impact the Company’s effective tax rate. As of September 28, 2024, the total amount of gross unrecognized tax benefits was $
+22.0
 billion, of which $
+10.8
 billion, if recognized, would have impacted the Company’s effective tax rate.
 The aggregate change in the balance of gross unrecognized tax benefits, which excludes interest and penalties, for 2025, 2024 and 2023 is as follows (in millions):
 Beginning balances
+$
+22,038
+$
+19,454
+$
+16,758
 Increases related to tax positions taken during a prior year
+1,971
+1,727
+2,044
 Decreases related to tax positions taken during a prior year
+(
+)
+(
+)
+(
+1,463
+)
 Increases related to tax positions taken during the current year
+3,795
+2,542
+2,628
 Decreases related to settlements with taxing authorities
+(
+2,939
+)
+(
+1,070
+)
+(
+)
 Decreases related to expiration of the statute of limitations
+(
+1,552
+)
+(
+)
+(
+)
 Ending balances
+$
+23,242
+$
+22,038
+$
+19,454
 The Company is subject to taxation and files income tax returns in the U.S. federal jurisdiction and many state and foreign jurisd
 ictions. Tax years 2018 and after 2021 for the U.S. federal jurisdiction, and after 2014 in certain major foreign jurisdictions, remain subject to examination. Altho
 ugh the timing of resolution or closure of examinations is not certain, the Company
@@ -1096,16 +2305,26 @@ Leases
 The Company has lease arrangements for certain equipment and facilities, including corporate, data center, manufacturing and retail space. These leases typically have original terms not exceeding
 years and generally contain multiyear renewal options, some of which are reasonably certain of exercise.
 Payments under the Company’s lease arrangements may be fixed or variable, and variable lease payments are primarily based on purchases of output of the underlying leased assets. Lease costs associated with fixed payments on the Company’s operating leases were $
+2.1
 billion for 2025 and $
+2.0
 billion for both 2024 and 2023. Lease costs associated with variable payments on the Company’s leases were $
+16.1
 billion, $
+13.8
 billion and $
+13.9
 billion for 2025, 2024 and 2023, respectively.
 The Company made fixed cash payments related to operating leases of $
+2.1
 billion in 2025 and $
+1.9
 billion in both 2024 and 2023. Noncash activities involving right-of-use (“ROU”) assets obtained in exchange for lease liabilities were $
+2.8
 billion, $
+1.0
 billion and $
+2.1
 billion for 2025, 2024 and 2023, respectively.
 The following table shows ROU assets and lease liabilities, and the associated financial statement line items, as of September 27, 2025 and September 28, 2024 (in millions):
 Lease-Related Assets and Liabilities
@@ -1113,17 +2332,37 @@ Financial Statement Line Items
 Right-of-use assets:
 Operating leases
 Other non-current assets
+$
+11,205
+$
+10,234
 Finance leases
 Property, plant and equipment, net
+1,033
+1,069
 Total right-of-use assets
+$
+12,238
+$
+11,303
 Lease liabilities:
 Operating leases
 Other current liabilities
+$
+1,579
+$
+1,488
 Other non-current liabilities
+10,911
+10,046
 Finance leases
 Other current liabilities
 Other non-current liabilities
 Total lease liabilities
+$
+13,720
+$
+12,430
 Apple Inc. | 2025 Form 10-K | 42
 Lease liability maturities as of September 27, 2025, are as follows (in millions):
 Operating
@@ -1131,14 +2370,50 @@ Leases
 Finance
 Leases
 Total
+$
+1,967
+$
+$
+2,530
+1,988
+2,061
+1,848
+1,899
+1,585
+1,633
+1,381
+1,424
 Thereafter
+5,956
+6,757
 Total undiscounted liabilities
+14,725
+1,579
+16,304
 Less: Imputed interest
+(
+2,235
+)
+(
+)
+(
+2,584
+)
 Total lease liabilities
+$
+12,490
+$
+1,230
+$
+13,720
 The weighted-average remaining lease term related to the Company’s lease liabilities as of September 27, 2025 and September 28, 2024 was
+9.8
 years and
+10.3
 years, respectively. The discount rate related to the Company’s lease liabilities as of September 27, 2025 and September 28, 2024 was
+3.4
 % and
+3.1
 %, respectively.
 The discount rates related to the Company’s lease liabilities are generally based on estimates of the Company’s incremental borrowing rate, as the discount rates implicit in the Company’s leases cannot be readily determined.
 As of September 27, 2025, the Company had $
@@ -1149,20 +2424,55 @@ Note 9 –
 Debt
 Commercial Paper
 The Company issues unsecured short-term promissory notes pursuant to a commercial paper program. The Company uses net proceeds from the commercial paper program for general corporate purposes, including dividends and share repurchases. As of September 27, 2025 and September 28, 2024, the Company had $
+8.0
 billion and $
+10.0
 billion of commercial paper outstanding, respectively, with maturities generally less than
 nine months
 . The weighted-average interest rate of the Company’s commercial paper was
+4.19
 % and
+5.00
 % as of September 27, 2025 and September 28, 2024, respectively.
 The following table provides a summary of cash flows associated with commercial paper for 2025, 2024 and 2023 (in millions):
 Maturities 90 days or less:
 Proceeds from/(Repayments of) commercial paper, net
+$
+(
+5,820
+)
+$
+3,960
+$
+(
+1,333
+)
 Maturities greater than 90 days:
 Proceeds from commercial paper
+5,836
 Repayments of commercial paper
+(
+2,048
+)
+(
+2,645
+)
 Proceeds from/(Repayments of) commercial paper, net
+3,788
+(
+2,645
+)
 Total proceeds from/(repayments of) commercial paper, net
+$
+(
+2,032
+)
+$
+3,960
+$
+(
+3,978
+)
 Apple Inc. | 2025 Form 10-K | 43
 Term Debt
 The Company has outstanding Notes, which are senior unsecured obligations with interest payable in arrears.
@@ -1179,37 +2489,112 @@ Effective
 Interest Rate
 2013 – 2023 debt issuances:
 Fixed-rate
+0.000
+% –
+4.850
 % notes
+$
+86,781
+0.03
+% –
+5.75
+%
+$
+97,341
+0.03
+% –
+6.65
+%
 2025 debt issuance:
 Fixed-rate
+4.000
+% –
+4.750
 % notes
+4,500
+4.07
+% –
+4.83
+%
 Total term debt principal
+91,281
+97,341
 Unamortized premium/(discount) and issuance costs, net
+(
+)
+(
+)
 Hedge accounting fair value adjustments
+(
+)
+(
+)
 Total term debt
+90,678
+96,662
 Less: Current portion of term debt
+(
+12,350
+)
+(
+10,912
+)
 Total non-current portion of term debt
+$
+78,328
+$
+85,750
 To manage interest rate risk on certain of its U.S. dollar–denominated fixed-rate notes, the Company uses interest rate swaps to effectively convert the fixed interest rates to floating interest rates on a portion of these notes. Additionally, to manage foreign exchange rate risk on certain of its foreign currency–denominated notes, the Company uses cross-currency swaps to effectively convert these notes to U.S. dollar–denominated notes.
 The effective interest rates for the Notes include the interest on the Notes, amortization of the discount or premium and, if applicable, adjustments related to hedging.
 The future principal payments for the Company’s Notes as of September 27, 2025, are as follows (in millions):
+$
+12,393
+10,078
+9,300
+5,235
+4,972
 Thereafter
+49,303
 Total term debt principal
+$
+91,281
 As of September 27, 2025 and September 28, 2024, the fair value of the Company’s Notes, based on Level 2 inputs, was $
+80.4
 billion and $
+88.4
 billion, respectively.
 Note 10 –
 Shareholders’ Equity
 Share Repurchase Program
 During 2025, the Company repurchased
 million shares of its common stock for $
+89.3
 billion. The Company’s share repurchase programs do not obligate the Company to acquire a minimum amount of shares. Under the programs, shares may be repurchased in privately negotiated or open market transactions, including under plans complying with Rule 10b5-1 under the Exchange Act.
 Apple Inc. | 2025 Form 10-K | 44
 Shares of Common Stock
 The following table shows the changes in shares of common stock for 2025, 2024 and 2023 (in thousands):
 Common stock outstanding, beginning balances
+15,116,786
+15,550,061
+15,943,425
 Common stock repurchased
+(
+401,672
+)
+(
+499,372
+)
+(
+471,419
+)
 Common stock issued, net of shares withheld for employee taxes
+58,146
+66,097
+78,055
 Common stock outstanding, ending balances
+14,773,260
+15,116,786
+15,550,061
 Note 11 –
 Share-Based Compensation
 2022 Employee Stock Plan
@@ -1218,6 +2603,7 @@ four years
 , based on continued employment, and are settled upon vesting in shares of the Company’s common stock on a
 one
 -for-one basis. All RSUs granted under the 2022 Plan have dividend equivalent rights, which entitle holders of RSUs to the same dividend value per share as holders of common stock. A maximum of approximately
+1.3
 billion shares were authorized for issuance pursuant to 2022 Plan awards at the time the plan was approved on March 4, 2022.
 Restricted Stock Units
 A summary of the Company’s RSU activity and related information for 2025 is as follows:
@@ -1228,26 +2614,72 @@ Weighted-Average
 Grant-Date Fair
 Value Per RSU
 Balance as of September 28, 2024
+163,326
+$
+158.73
 RSUs granted
+73,466
+$
+226.68
 RSUs vested
+(
+76,845
+)
+$
+159.85
 RSUs forfeited
+(
+8,373
+)
+$
+183.03
 Balance as of September 27, 2025
+151,574
+$
+189.75
 The weighted-average grant-date fair value of RSUs granted in 2024 and 2023 was $
+173.78
 and $
+150.87
 , respectively.
 The Company estimates the grant-date fair value of RSUs based on the closing price of the Company’s common stock on the date of grant.
 The total vesting-date fair value of RSUs was $
+17.1
 billion, $
+15.8
 billion and $
+15.9
 billion for 2025, 2024 and 2023, respectively. The majority of RSUs that vested in 2025, 2024 and 2023 were net share settled such that the Company withheld shares with a value equivalent to the employees’ obligation for the applicable income and other employment taxes, and remitted cash to the appropriate taxing authorities. Total payments to taxing authorities for employees’ tax obligations were $
+6.1
 billion in 2025 and $
+5.6
 billion in both 2024 and 2023.
 Share-Based Compensation
 The following table shows share-based compensation expense and the related income tax benefit included in the Consolidated Statements of Operations for 2025, 2024 and 2023 (in millions):
 Share-based compensation expense
+$
+12,863
+$
+11,688
+$
+10,833
 Income tax benefit related to share-based compensation expense
+$
+(
+3,602
+)
+$
+(
+3,350
+)
+$
+(
+3,421
+)
 As of September 27, 2025, the total unrecognized compensation cost related to outstanding RSUs was $
+21.8
 billion, which the Company expects to recognize over a weighted-average period of
+2.5
 years.
 Apple Inc. | 2025 Form 10-K | 45
 Note 12 –
@@ -1255,8 +2687,15 @@ Commitments, Contingencies and Supply Concentrations
 Unconditional Purchase Obligations
 The Company has entered into certain off–balance sheet commitments that require the future purchase of goods or services (“unconditional purchase obligations”). The Company’s unconditional purchase obligations primarily consist of supplier arrangements, licensed intellectual property and content, and distribution rights.
 Future payments under unconditional purchase obligations with a remaining term in excess of one year as of September 27, 2025, are as follows (in millions):
+$
+4,752
+3,708
+1,981
+1,306
 Thereafter
 Total
+$
+13,308
 Contingencies
 The Company is subject to various legal proceedings and claims that have arisen in the ordinary course of business and that have not been fully resolved. The outcome of litigation is inherently uncertain. In the opinion of management, there was not at least a reasonable possibility the Company may have incurred a material loss, or a material loss greater than a recorded accrual, concerning loss contingencies for asserted legal and other claims.
 Concentrations in the Available Sources of Supply of Materials and Product
@@ -1280,11 +2719,87 @@ Asia Pacific
 Corporate
 Total
 Net sales
+$
+178,353
+$
+111,032
+$
+64,377
+$
+28,703
+$
+33,696
+$
+$
+416,161
 Cost of sales
+(
+95,699
+)
+(
+58,617
+)
+(
+35,141
+)
+(
+13,779
+)
+(
+17,724
+)
+(
+220,960
+)
 Research and development
+(
+34,550
+)
+(
+34,550
+)
 Selling and marketing
+(
+10,174
+)
+(
+4,676
+)
+(
+2,319
+)
+(
+)
+(
+1,386
+)
+(
+19,524
+)
 General and administrative
+(
+8,077
+)
+(
+8,077
+)
 Operating income/(loss)
+$
+72,480
+$
+47,739
+$
+26,917
+$
+13,955
+$
+14,586
+$
+(
+42,627
+)
+$
+133,050
 Americas
 Europe
 Greater
@@ -1295,11 +2810,87 @@ Asia Pacific
 Corporate
 Total
 Net sales
+$
+167,045
+$
+101,328
+$
+66,952
+$
+25,052
+$
+30,658
+$
+$
+391,035
 Cost of sales
+(
+89,587
+)
+(
+55,197
+)
+(
+37,519
+)
+(
+11,744
+)
+(
+16,305
+)
+(
+210,352
+)
 Research and development
+(
+31,370
+)
+(
+31,370
+)
 Selling and marketing
+(
+9,802
+)
+(
+4,341
+)
+(
+2,351
+)
+(
+)
+(
+1,291
+)
+(
+18,639
+)
 General and administrative
+(
+7,458
+)
+(
+7,458
+)
 Operating income/(loss)
+$
+67,656
+$
+41,790
+$
+27,082
+$
+12,454
+$
+13,062
+$
+(
+38,828
+)
+$
+123,216
 Americas
 Europe
 Greater
@@ -1310,23 +2901,132 @@ Asia Pacific
 Corporate
 Total
 Net sales
+$
+162,560
+$
+94,294
+$
+72,559
+$
+24,257
+$
+29,615
+$
+$
+383,285
 Cost of sales
+(
+92,394
+)
+(
+54,101
+)
+(
+39,787
+)
+(
+11,542
+)
+(
+16,313
+)
+(
+214,137
+)
 Research and development
+(
+29,915
+)
+(
+29,915
+)
 Selling and marketing
+(
+9,658
+)
+(
+4,095
+)
+(
+2,444
+)
+(
+)
+(
+1,236
+)
+(
+18,260
+)
 General and administrative
+(
+6,672
+)
+(
+6,672
+)
 Operating income/(loss)
+$
+60,508
+$
+36,098
+$
+30,328
+$
+11,888
+$
+12,066
+$
+(
+36,587
+)
+$
+114,301
 Apple Inc. | 2025 Form 10-K | 47
 The following tables show net sales for 2025, 2024 and 2023 and long-lived assets as of September 27, 2025 and September 28, 2024 for countries that individually accounted for 10% or more of the respective totals, as well as aggregate amounts for the remaining countries (in millions):
 Net sales:
 U.S.
+$
+151,790
+$
+142,196
+$
+138,573
 China
+(1)
+64,377
+66,952
+72,559
 Other countries
+199,994
+181,887
+172,153
 Total net sales
+$
+416,161
+$
+391,035
+$
+383,285
 Long-lived assets:
 U.S.
+$
+40,274
+$
+35,664
 China
+(1)
+3,617
+4,797
 Other countries
+5,943
+5,219
 Total long-lived assets
+$
+49,834
+$
+45,680
+(1)
 China includes Hong Kong and Taiwan.
 Apple Inc. | 2025 Form 10-K | 48
 Report of Independent Registered Public Accounting Firm
@@ -1415,6 +3115,7 @@ PART IV
 Item 15. Exhibit and Financial Statement Schedules
 (a)
 Documents filed as part of this report
+(1)
 All financial statements
 Index to Consolidated Financial Statements
 Page
@@ -1425,10 +3126,14 @@ Consolidated Statements of Shareholders’ Equity for the years ended September 
 Consolidated Statements of Cash Flows for the years ended September 27, 2025, September 28, 2024 and September 30, 2023
 Notes to Consolidated Financial Statements
 Reports of Independent Registered Public Accounting Firm*
+*
 Ernst & Young LLP, PCAOB Firm ID No. 000
+(2)
 Financial Statement Schedules
 All financial statement schedules have been omitted, since the required information is not applicable or is not present in amounts sufficient to require submission of the schedule, or because the information required is included in the consolidated financial statements and accompanying notes included in this Form 10-K.
+(3)
 Exhibits required by Item 601 of Regulation S-K
+(1)
 Incorporated by Reference
 Exhibit Number
 Exhibit Description
@@ -1436,25 +3141,53 @@ Form
 Exhibit
 Filing Date/
 Period End Date
+3.1
 Restated Articles of Incorporation of the Registrant filed on August 3, 2020.
 8-K
+3.1
+8/7/20
+3.2
 Amended and Restated Bylaws of the Registrant effective as of August 20, 2024.
 8-K
+3.2
+8/23/24
+4.1**
 Description of Securities of the Registrant.
+4.2
 Indenture, dated as of April 29, 2013, between the Registrant and The Bank of New York Mellon Trust Company, N.A., as Trustee.
 S-3
+4.1
+4/29/13
+4.3
 Officer’s Certificate of the Registrant, dated as of May 3, 2013, including forms of global notes representing the Floating Rate Notes due 2016, Floating Rate Notes due 2018, 0.45% Notes due 2016, 1.00% Notes due 2018, 2.40% Notes due 2023 and 3.85% Notes due 2043.
 8-K
+4.1
+5/3/13
+4.4
 Officer’s Certificate of the Registrant, dated as of May 6, 2014, including forms of global notes representing the Floating Rate Notes due 2017, Floating Rate Notes due 2019, 1.05% Notes due 2017, 2.10% Notes due 2019, 2.85% Notes due 2021, 3.45% Notes due 2024 and 4.45% Notes due 2044.
 8-K
+4.1
+5/6/14
+4.5
 Officer’s Certificate of the Registrant, dated as of November 10, 2014, including forms of global notes representing the 1.000% Notes due 2022 and 1.625% Notes due 2026.
 8-K
+4.1
+11/10/14
+4.6
 Officer’s Certificate of the Registrant, dated as of February 9, 2015, including forms of global notes representing the Floating Rate Notes due 2020, 1.55% Notes due 2020, 2.15% Notes due 2022, 2.50% Notes due 2025 and 3.45% Notes due 2045.
 8-K
+4.1
+2/9/15
+4.7
 Officer’s Certificate of the Registrant, dated as of May 13, 2015, including forms of global notes representing the Floating Rate Notes due 2017, Floating Rate Notes due 2020, 0.900% Notes due 2017, 2.000% Notes due 2020, 2.700% Notes due 2022, 3.200% Notes due 2025, and 4.375% Notes due 2045.
 8-K
+4.1
+5/13/15
+4.8
 Officer’s Certificate of the Registrant, dated as of July 31, 2015, including forms of global notes representing the 3.05% Notes due 2029 and 3.60% Notes due 2042.
 8-K
+4.1
+7/31/15
 Apple Inc. | 2025 Form 10-K | 54
 Incorporated by Reference
 Exhibit Number
@@ -1463,40 +3196,91 @@ Form
 Exhibit
 Filing Date/
 Period End Date
+4.9
 Officer’s Certificate of the Registrant, dated as of September 17, 2015, including forms of global notes representing the 1.375% Notes due 2024 and 2.000% Notes due 2027.
 8-K
+4.1
+9/17/15
+4.10
 Officer’s Certificate of the Registrant, dated as of February 23, 2016, including forms of global notes representing the Floating Rate Notes due 2019, Floating Rate Notes due 2021, 1.300% Notes due 2018, 1.700% Notes due 2019, 2.250% Notes due 2021, 2.850% Notes due 2023, 3.250% Notes due 2026, 4.500% Notes due 2036 and 4.650% Notes due 2046.
 8-K
+4.1
+2/23/16
+4.11
 Supplement No. 1 to the Officer’s Certificate of the Registrant, dated as of March 24, 2016.
 8-K
+4.1
+3/24/16
+4.12
 Officer’s Certificate of the Registrant, dated as of August 4, 2016, including forms of global notes representing the Floating Rate Notes due 2019, 1.100% Notes due 2019, 1.550% Notes due 2021, 2.450% Notes due 2026 and 3.850% Notes due 2046.
 8-K
+4.1
+8/4/16
+4.13
 Officer’s Certificate of the Registrant, dated as of February 9, 2017, including forms of global notes representing the Floating Rate Notes due 2019, Floating Rate Notes due 2020, Floating Rate Notes due 2022, 1.550% Notes due 2019, 1.900% Notes due 2020, 2.500% Notes due 2022, 3.000% Notes due 2024, 3.350% Notes due 2027 and 4.250% Notes due 2047.
 8-K
+4.1
+2/9/17
+4.14
 Officer’s Certificate of the Registrant, dated as of May 11, 2017, including forms of global notes representing the Floating Rate Notes due 2020, Floating Rate Notes due 2022, 1.800% Notes due 2020, 2.300% Notes due 2022, 2.850% Notes due 2024 and 3.200% Notes due 2027.
 8-K
+4.1
+5/11/17
+4.15
 Officer’s Certificate of the Registrant, dated as of May 24, 2017, including forms of global notes representing the 0.875% Notes due 2025 and 1.375% Notes due 2029.
 8-K
+4.1
+5/24/17
+4.16
 Officer’s Certificate of the Registrant, dated as of June 20, 2017, including form of global note representing the 3.000% Notes due 2027.
 8-K
+4.1
+6/20/17
+4.17
 Officer’s Certificate of the Registrant, dated as of September 12, 2017, including forms of global notes representing the 1.500% Notes due 2019, 2.100% Notes due 2022, 2.900% Notes due 2027 and 3.750% Notes due 2047.
 8-K
+4.1
+9/12/17
+4.18
 Officer’s Certificate of the Registrant, dated as of November 13, 2017, including forms of global notes representing the 1.800% Notes due 2019, 2.000% Notes due 2020, 2.400% Notes due 2023, 2.750% Notes due 2025, 3.000% Notes due 2027 and 3.750% Notes due 2047.
 8-K
+4.1
+11/13/17
+4.19
 Indenture, dated as of November 5, 2018, between the Registrant and The Bank of New York Mellon Trust Company, N.A., as Trustee.
 S-3
+4.1
+11/5/18
+4.20
 Officer’s Certificate of the Registrant, dated as of September 11, 2019, including forms of global notes representing the 1.700% Notes due 2022, 1.800% Notes due 2024, 2.050% Notes due 2026, 2.200% Notes due 2029 and 2.950% Notes due 2049.
 8-K
+4.1
+9/11/19
+4.21
 Officer’s Certificate of the Registrant, dated as of November 15, 2019, including forms of global notes representing the 0.000% Notes due 2025 and 0.500% Notes due 2031.
 8-K
+4.1
+11/15/19
+4.22
 Officer’s Certificate of the Registrant, dated as of May 11, 2020, including forms of global notes representing the 0.750% Notes due 2023, 1.125% Notes due 2025, 1.650% Notes due 2030 and 2.650% Notes due 2050.
 8-K
+4.1
+5/11/20
+4.23
 Officer’s Certificate of the Registrant, dated as of August 20, 2020, including forms of global notes representing the 0.550% Notes due 2025, 1.25% Notes due 2030, 2.400% Notes due 2050 and 2.550% Notes due 2060.
 8-K
+4.1
+8/20/20
+4.24
 Officer’s Certificate of the Registrant, dated as of February 8, 2021, including forms of global notes representing the 0.700% Notes due 2026, 1.200% Notes due 2028, 1.650% Notes due 2031, 2.375% Notes due 2041, 2.650% Notes due 2051 and 2.800% Notes due 2061.
 8-K
+4.1
+2/8/21
+4.25
 Officer’s Certificate of the Registrant, dated as of August 5, 2021, including forms of global notes representing the 1.400% Notes due 2028, 1.700% Notes due 2031, 2.700% Notes due 2051 and 2.850% Notes due 2061.
 8-K
+4.1
+8/5/21
 Apple Inc. | 2025 Form 10-K | 55
 Incorporated by Reference
 Exhibit Number
@@ -1505,59 +3289,132 @@ Form
 Exhibit
 Filing Date/
 Period End Date
+4.26
 Indenture, dated as of October 28, 2021, between the Registrant and The Bank of New York Mellon Trust Company, N.A., as Trustee.
 S-3
+4.1
+10/29/21
+4.27
 Officer’s Certificate of the Registrant, dated as of August 8, 2022, including forms of global notes representing the 3.250% Notes due 2029, 3.350% Notes due 2032, 3.950% Notes due 2052 and 4.100% Notes due 2062.
 8-K
+4.1
+8/8/22
+4.28
 Officer’s Certificate of the Registrant, dated as of May 10, 2023, including forms of global notes representing the 4.421% Notes due 2026, 4.000% Notes due 2028, 4.150% Notes due 2030, 4.300% Notes due 2033 and 4.850% Notes due 2053.
 8-K
+4.1
+5/10/23
+4.29
 Officer’s Certificate of the Registrant, dated as of May 12, 2025, including forms of global notes representing the 4.000% Notes due 2028, 4.200% Notes due 2030, 4.500% Notes due 2032 and 4.750% Notes due 2035.
 8-K
+4.1
+5/12/25
+4.30*
 Apple Inc. Deferred Compensation Plan.
 S-8
+4.1
+8/23/18
+10.1*
 Apple Inc. Employee Stock Purchase Plan, as amended
 as of
 Novem
 ber 6,
 10-Q
+10.1
+12/28/24
+10.2*
 Form of Indemnification Agreement between the Registrant and each director and executive officer of the Registrant.
 10-Q
+10.2
+6/27/09
+10.3*
 Apple Inc. Non-Employee Director Stock Plan, as amended November
+,
 10-Q
+10.2
+12/28/24
+10.4*
 Apple Inc. 2014 Employee Stock Plan, as amended and restated as of October 1, 2017.
 10-K
+10.8
+9/30/17
+10.5*
 Form of Restricted Stock Unit Award Agreement under 2014 Employee Stock Plan effective as of August 18, 2020.
 10-K
+10.16
+9/26/20
+10.6*
 Apple Inc. 2022 Employee Stock Plan.
 8-K
+10.1
+3/4/22
+10.7*
 Form of Restricted Stock Unit Award Agreement under 2022 Employee Stock Plan effective as of March 4, 2022.
 8-K
+10.2
+3/4/22
+10.8*
 Form of Performance Award Agreement under 2022 Employee Stock Plan effective as of March 4, 2022.
 8-K
+10.3
+3/4/22
+10.9*
 Apple Inc. Executive Cash Incentive Plan.
 8-K
+10.1
+8/19/22
+10.10*
 Form of CEO Restricted Stock Unit Award Agreement under 2022 Employee Stock Plan effective as of September 25, 2022.
 10-Q
+10.1
+12/31/22
+10.11*
 Form of CEO Performance Award Agreement under 2022 Employee Stock Plan effective as of September 25, 2022.
 10-Q
+10.2
+12/31/22
+10.12*
 Form of Restricted Stock Unit Award Agreement under 2022 Employee Stock Plan effective as of September 29, 2024.
 10-K
+10.19
+9/28/24
+10.13*
 Form of Performance Award Agreement under 2022 Employee Stock Plan effective as of September 29, 2024.
 10-K
+10.20
+9/28/24
+10.14*
 Form of CEO Restricted Stock Unit Award Agreement under 2022 Employee Stock Plan effective as of September 29, 2024.
 10-K
+10.21
+9/28/24
+10.15*
 Form of CEO Performance Award Agreement under 2022 Employee Stock Plan effective as of September 29, 2024.
 10-K
+10.22
+9/28/24
+19.1
 Insider Trading Policy.
 10-K
+19.1
+9/28/24
+21.1**
 Subsidiaries of the Registrant.
+23.1**
 Consent of Independent Registered Public Accounting Firm.
+24.1**
 Power of Attorney (included on the Signatures page of this Annual Report on Form 10-K).
+31.1**
 Rule 13a-14(a) / 15d-14(a) Certification of Chief Executive Officer.
+31.2**
 Rule 13a-14(a) / 15d-14(a) Certification of Chief Financial Officer.
+32.1***
 Section 1350 Certifications of Chief Executive Officer and Chief Financial Officer.
+97.1*
 Rule 10D-1 Recovery Policy
 10-K
+97.1
+9/28/24
 Apple Inc. | 2025 Form 10-K | 56
 Incorporated by Reference
 Exhibit Number
@@ -1566,11 +3423,17 @@ Form
 Exhibit
 Filing Date/
 Period End Date
+101**
 Inline XBRL Document Set for the consolidated financial statements and accompanying notes in Part II, Item 8, “Financial Statements and Supplementary Data” of this Annual Report on Form 10-K.
+104**
 Inline XBRL for the cover page of this Annual Report on Form 10-K, included in the Exhibit 101 Inline XBRL Document Set.
+*
 Indicates management contract or compensatory plan or arrangement.
+**
 Filed herewith.
+***
 Furnished herewith.
+(1)
 Certain instruments defining the rights of holders of long-term debt securities of the Registrant are omitted pursuant to Item 601(b)(4)(iii) of Regulation S-K. The Registrant hereby undertakes to furnish to the SEC, upon request, copies of any such instruments.
 Item 16. Form 10-K Summary
 None.
