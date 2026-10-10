@@ -2,6 +2,8 @@
 
 [![tests](https://github.com/otawfik/rag-in-a-box/actions/workflows/ci.yml/badge.svg)](https://github.com/otawfik/rag-in-a-box/actions/workflows/ci.yml)
 
+**[▶ Live demo](https://rag-in-a-box.vercel.app)**
+
 A production-style **retrieval-augmented generation (RAG) chatbot** that runs
 entirely on your machine — no API keys, no GPU, no cloud bills. Index your
 documents, ask questions in plain English, and get answers with **[n]
