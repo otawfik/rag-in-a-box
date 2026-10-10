@@ -13,6 +13,7 @@ Command line::
 from __future__ import annotations
 
 import argparse
+import os
 from pathlib import Path
 
 from flask import Flask, jsonify, request
@@ -21,7 +22,8 @@ from ragbox.pipeline import RAGPipeline
 
 BASE_DIR = Path(__file__).resolve().parent
 CORPUS_DIR = BASE_DIR / "corpus"
-INDEX_DIR = BASE_DIR / ".ragbox_index"
+# serverless hosts (Vercel) only allow writes under /tmp
+INDEX_DIR = Path("/tmp/.ragbox_index") if os.environ.get("VERCEL") else BASE_DIR / ".ragbox_index"
 
 app = Flask(__name__)
 _pipeline: RAGPipeline | None = None
