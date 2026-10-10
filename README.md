@@ -1,5 +1,7 @@
 # 📦 RAG-in-a-Box
 
+[![tests](https://github.com/otawfik/rag-in-a-box/actions/workflows/ci.yml/badge.svg)](https://github.com/otawfik/rag-in-a-box/actions/workflows/ci.yml)
+
 A production-style **retrieval-augmented generation (RAG) chatbot** that runs
 entirely on your machine — no API keys, no GPU, no cloud bills. Index your
 documents, ask questions in plain English, and get answers with **[n]
@@ -7,6 +9,8 @@ citations** pointing back to the exact source sections.
 
 Ships with a fun demo corpus: the *Acme Space Tours* passenger guide
 (fictional space-tourism company).
+
+![RAG-in-a-Box answering 'How much does a Mars trip cost?' with three cited sources](screenshots/app.jpg)
 
 ## Features
 
